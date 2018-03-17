@@ -1,0 +1,167 @@
+body{ margin:0; padding:0; font:12px/1.5 tahoma,arial;background: #fefefe url(http://cj.bavlo.com/web/image/header/body_bj.png) repeat;}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, img, small, strike, sub, sup, tt, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0;  }
+ul , li { list-style:none;}
+a{text-decoration:none;}
+.clear{clear:both; display:block; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;}
+.right{float:right;}
+.left{float:left;}
+/*整体*/
+#main_list{width:1000px;height:auto; margin:15px auto 10px auto;overflow:hidden;}
+
+
+/*首页*/
+.center{width:100%; margin:0px auto 0px;overflow:hidden;}
+#main{width:1000px; margin:0px auto 0px;overflow:hidden;}
+#bannerlist{position:relative;overflow:hidden;height:500px; margin:0px auto 15px auto;}
+
+.ad_1{width:1000px; margin:17px auto 0px;overflow:hidden;}
+.br_line{border-top:1px solid #ff0000;padding-top:20px;position: relative;}
+.mlr_10{margin:0px 14px}
+.mlr_15{margin:0px 10px 0px 13px}
+.jion{float:right;width:317px;}
+.jion ul{border:1px solid #ddd;width:315px;border-bottom:none}
+.jion ul li{line-height:58px;border-bottom:1px solid #ddd;width:100%;overflow:hidden;}
+.jion ul li p{float:left;width:235px;line-height:58px;padding-left:10px;border-right:1px solid #ddd}
+.jion ul li p b{font-weight:normal;margin-right:5px}
+.jion ul li  span{float:left;display:block;width:67px;height:46px;text-align:center;padding-top:12px;background:#fafafa}
+.jion ul li  span img{vertical-align:middle;height:34px;line-height:34px;}
+.shouceng{margin:10px auto 0px;text-align:center}
+.shouceng a{float:left;display:block;background:url(http://cj.bavlo.com/web/image/header/but.gif) no-repeat;width:150px;font:bold 13px/44px "微软雅黑";color:#8c0000;height:44px;text-align:centet}
+
+.lanmu{width:1000px; margin:20px auto 0px;overflow:hidden;border-top:1px solid #ff0000;background:url(http://cj.bavlo.com/web/image/header/h3bj.gif) top left repeat-x;}
+.lanmu_nav{height:38px;padding-top:5px;border:1px solid #ddd;border-top:none}
+.lanmu_nav li{cursor:default;float:left;width:130px;font:bold 15px/43px "微软雅黑";color:#777;text-align:center;line-height:38px;background:url(http://cj.bavlo.com/web/image/header/xian.jpg) center right no-repeat;}
+.lanmu_nav .hao1{color:#8c0000;margin-left:-1px;background:url(http://cj.bavlo.com/web/image/header/h3bj1.gif) repeat-x;height:38px;border:1px solid #ddd;border-bottom:none}
+.lanmu_nav .ri{float:right;margin-right:20px;text-align:right;background:none}
+.lanmu_nav .ri a{font-size:12px;color:#bbb;line-height:28px;padding-right:0px;font-weight:normal;font-family:"宋体"}
+.lanmu_nav .ri a:hover{color:#8c0000;}
+.lanmu_nav .ri a font{font-size:20px;position:relative;top:3px}
+.tab_cont{width:1000px;padding-top:15px;border-top:none;overflow:hidden;height:120px}
+.bor_line{width:998px;border:1px solid #ddd;border-top:none;padding-bottoms:10px}
+.tab_cont a:hover{color:#8c0000;}
+.xys{float:left;margin-right:40px;width:170px;text-align:right;display:inline}
+.xys a{display:block;width:100%;line-height:25px;color:#2a7db1}
+.jian{float:left;width:140px;}
+.jian img{padding-top:8px}
+.ol1,.ol2{float:left;width:220px;padding-top:10px}
+.ol1{width:850px;}
+.ol1 li{float:left;line-height:25px;text-align:center;width:60px;margin-right:10px;}
+.ol2 li{float:left;line-height:25px;text-align:center;width:70px;margin-right:3px;}
+.ol2 li a,.ol1 li a{color:#333;font-size:13px;}
+.ol2 li img,.ol1 li img{height:52px;width:58px;padding-top:10px;*+margin-bottom:5px}
+.scs{float:left;width:630px;display:inline;text-align:center;height:40px;line-height:40px;margin-top:25px}
+.scs a{margin-right:20px;color:#2a7db1}
+.jns{float:left;width:630px;display:inline;text-align:center;}
+.jns a{float:left;display:block;width:60px;line-height:25px;color:#2a7db1;text-align:right;}
+.balov{float:left;width:150px;}
+.balov img{margin-top:10px}
+
+.lanmu_title{margin-bottom:20px;height:43px;line-height:43px;width:998px;border:1px solid #ddd;border-top:none;overflow:hidden;position:relative;}
+.lanmu_title h3{float:left;padding-left:20px;width:730px;font:15px/43px "微软雅黑";color:#777;}
+.lanmu_title p{float:left;background:url(http://cj.bavlo.com/web/image/header/xian.jpg) center left no-repeat;font: 15px/43px "微软雅黑";color:#777;padding-left:20px}
+.lanmu_title a{position:absolute;right:20px;top:5px;font-size:12px;color:#bbb;line-height:28px;font-weight:normal;font-family:"宋体"}
+.lanmu_title a:hover{color:#8c0000;}
+.lanmu_title a font{font-size:20px;position:relative;top:3px}
+
+.lanmu_cen{width:100%;overflow:hidden;}
+.lanmu_cen ul{float:left;width:240px;height:260px;margin-right:13px;}
+.lanmu_cen li{float:left;width:240px;}
+.lanmu_cen li a{color:#777;}
+.lanmu_cen li a:hover{color:#8c0000;}
+.lanmu_cen li img{margin-bottom:10px}
+.lanmu_cen li span{font:15px/43px "微软雅黑";color:#777;padding-top: 30px;}
+.lanmu_p2{height:200px;text-align:center;}
+.lanmu_cen .lanmu_p1{text-align:center;margin-right:10px}
+.lanmu_cen .lanmu_p3{color:#999;line-height:25px;width:200px;margin-left: 12px}
+.lanmu_cen .lanmu_p4{float:right;border:1px solid #ddd;width:210px;height:240px;padding:15px 15px 15px 21px;}
+.lanmu_cen .lanmu_p4 a{display:block;color:#777;margin-top:4px;line-height:25px;width:93%;height:25px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+/*友情链接*/
+
+
+.links{border:1px solid #ddd;width:998px;margin:0 auto 15px;overflow:hidden;padding-bottom:7px;}
+.link_left{margin-top:10px;}
+.links h6{font-size:16px;color:#777777;margin:5px 15px 0 30px;}
+.link_right{border-left:1px solid #ddd;margin-top:10px;}
+.link_right ul{margin-left:10px;width:870px;overflow:hidden;}
+.link_right ul li{float:left;margin-left:15px;display:inline;line-height:30px;width:90px;height:30px;overflow:hidden;}
+.link_right ul li a{color:#aaa;}
+.link_right ul li a:hover{color:#aaa;}
+.link_share{width: 1000px;margin: 0 auto 15px;overflow: hidden;}
+
+/*宝珑动态*/
+.news{border:1px solid #ddd;width:998px;padding-bottom:20px;overflow:hidden;margin:30px auto 20px;}
+.title{background: url(http://cj.bavlo.com/web/image/header/h3bj.gif) repeat-x;border-bottom:1px solid #ddd;height:43px;line-height:43px;width:100%;overflow:hidden;}
+.title h3{width:326px;float:left;font-weight:normal;}
+.title h3 span{font-size:16px;color:#666;padding-left:23px;float:left;font-family:"Microsoft YaHei"}
+.title h3 span.bavlo_news{font-size:14px;color:#8c0000;padding-left:10px;}
+.title h3 a{float:right;font-size:12px;color:#bbb;padding-right:25px;font-weight:normal;font-family:"宋体"}
+.title h3 a:hover{color:#8c0000;}
+.title h3 a font{font-size:20px;position:relative;top:3px}
+.news ul{float:left;width:326px;margin-top:14px;border-right:1px solid #ddd;}
+.news ul li{border-bottom:1px solid #ddd;margin-left:25px;background: url(http://cj.bavlo.com/web/image/header/new_2.gif) no-repeat 0px 13px;padding-left:15px;width:251px;height:31px;line-height:31px;overflow:hidden}
+.news ul li a{color:#666;}
+.news ul li a:hover{color:#8c0000;}
+/*banner翻页按钮*/
+#rightbtn{position:absolute;left:150px;top:253px;width:21px;height:50px;cursor:pointer;z-index:10;}
+#rightbtn span{display:block; width:21px;height:50px;background:url(http://cj.bavlo.com/web/images/pic/arrowr.png) no-repeat;}
+*html #rightbtn span{ background:none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src="images/pic/arrowr.png");
+}
+#leftbtn span{display:block; width:21px;height:50px;background:url(http://cj.bavlo.com/web/images/pic/arrow.png) no-repeat;}
+*html #leftbtn span{ background:none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src="http://cj.bavlo.com/web/images/pic/arrow.png");
+}
+#leftbtn{position:absolute;right:150px;top:253px;width:21px;height:50px;cursor:pointer;z-index:10;}
+
+
+.products_line{background:url(http://cj.bavlo.com/web/images/list/verticalLine.png) no-repeat;width:1px;height:200px;margin:0 6px;float: left;}
+
+
+/*定制区*/
+.indexDiy_left{width:670px;float:left;position:relative;}
+.show_ring{border:1px solid #eee;}
+.jiage{position: absolute;bottom:15px;right:35px;color:#333;font-size:16px;height:30px;line-height:30px;}
+.jiage b{color:#8c0000;margin:0px 10px;font-size:20px}
+/*登录*/
+.login{position:fixed;_position: absolute;width:100%;height:100%;top:1px;display:none;background:#333333; filter: alpha(opacity=90); opacity: 0.9;z-index: 999;}
+.login_t{width:900px;height:400px;margin-top:250px;z-index: 101;}
+.w_442{width:442px;}
+.w_442.new{border-left:1px solid #bbb;}
+.side{border:1px solid #bbb;width:440px;background:#fff;}
+.pass{border:1px solid #bbb;width:440px;padding-bottom:3px;background:#fff;}
+.w_442 h3{font-size:14px;font-weight:normal;color:#ddd;background:#444;height:31px;line-height:31px;}
+.w_442 h3 span{padding-left:19px;font-size: 14px;color: #DDD;}
+.word{width:411px;margin:0 auto;border-bottom:1px solid #bbb;overflow:hidden;padding-bottom:18px;}
+.word.redo{border-bottom:none;padding-bottom:23px;}
+.word.redo li{margin:18px 0 0px 30px;}
+.word li{font-size:14px;color:#333;width:90%;float:left;margin:19px 0 0 30px;display:inline;}
+.word li span{float:left;}
+.word li a{font-size: 12px;float: right;margin-right: 25px;}
+.word li label{display:block;width:70px;float:left;text-align:right;margin-right:13px;}
+.inp_text{width:200px;height:17px;line-height:17px;float:left;border:1px solid #9b9b9b;}
+.inp_text1{width:100px;height:17px;line-height:17px;float:left;border:1px solid #9b9b9b;}
+#validateImage{cursor: pointer;margin-left: 20px;margin-top:-4px; float: left;}
+.inp_sub{background:url(http://cj.bavlo.com/web/image01/login/l_1.gif) no-repeat;border:none;width:58px;height:23px;line-height:23px;cursor:pointer;font-size:12px;color:#eee;margin-right:85px;float:right;}
+.inp_che{margin-right:8px;position:relative;top:2px;right:3px;}
+.error{float:left;font-weight:normal;margin-left:5px;font-size:12px;width:50px;color:#ff0000}
+.w_442 p{margin-left:53px;line-height:25px;color:#333;width:336px;}
+.w_442 p.forget{font-size:14px;color:#444;padding:14px 0 11px;}
+.w_442 p.least{margin-left:45px;}
+.w_442 p.forget.least{padding:14px 0 2px;}
+.inp_sub.register{background:url(http://cj.bavlo.com/web/image01/login/l_2.gif) no-repeat;border:none;width:83px;height:23px;line-height:20px;cursor:pointer;font-size:12px;color:#eee;margin-right:85px;float:right;}
+.word li.mail{margin-top:12px;}
+.word li.once{margin-top:0px;}
+.w_442 h5{font-size:14px;color:#777;padding-top:27px;}
+.enjoy li{background:url(http://cj.bavlo.com/web/image01/login/l_3.gif) no-repeat 0px 6px;padding-left:15px;margin-top:8px;}
+.enjoy li a{color:#777;}
+/*宝石筛选器*/
+.bor_line{width:998px;border:1px solid #ddd;border-top:none;padding-bottoms:10px}
+.type_constellation{width:624px;height:100px;float:left;margin-left:6px;}
+.type_constellation li{float:left;height:35px;line-height:35px;width:150px;margin-left:6px;}
+.type_birthdate{width:620px;height:30px;float:left;margin-top:30px;margin-left:10px;}
+.type_birthdate li{float:left;height:35px;line-height:35px;width:30px;margin-left:20px;}
+.type_anniversary{width:620px;height:100px;float:left;margin-left:10px;}
+.type_anniversary li{float:left;height:25px;line-height:25px;;width:40px;margin-left:20px;}
+.plaything{color: #2A7DB1;cursor: pointer;}
+.plaything_sel{color:#8c0000;}

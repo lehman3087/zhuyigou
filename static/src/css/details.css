@@ -1,0 +1,392 @@
+body{ margin:0; padding:0; font:12px/1.5 tahoma,arial;background: #fefefe url(http://cj.bavlo.com/web/image/header/body_bj.png) repeat;}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, img, small, strike, sub, sup, tt, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0;  }
+ul , li { list-style:none;}
+a{text-decoration:none;}
+.clear{clear:both; display:block; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;}
+.right{float:right;}
+.left{float:left;}
+
+/*����ҳ*/
+#detail_cen{width:998px;margin:0px auto 20px;border:1px solid #bbbbbb;background:#fff;overflow:hidden;}
+
+.detail_h6{border-bottom:1px solid #bdbdbd;width:95%;margin:15px auto 0px;overflow:hidden;padding-bottom:13px;}
+.detail_h6 span{float:left;}
+.danc_1{font-family:"微软雅黑";font-size:16px;color:#8c0000;}
+.danc_1 img{position:relative;top:1px;left:5px;}
+.danc_2{font-family:"宋体";font-size:12px;color:#aaa;margin:5px 0 0 33px;}
+.danc_3{font-family:"宋体";font-size:12px;color:#444;margin:0px 0 0 170px;}
+.danc_3 strong{font-family:"Verdana";font-size:16px;color:#8c0000;}
+
+
+/*����*/
+.share1{float:right;width:200px;_width:210px;margin-right:10px;}
+.ldg{float:left;margin-left:15px;}
+.ldg p{font-size:12px;color:#171717;font-family:"宋体";margin-top:3px;}
+.jiathis_style{float:right;margin-top:3px;}
+
+.detail_choose{width:95%;margin:0 auto 0;padding-bottom:30px;position:relative;}
+.det_ch_left{float:left;width:160px;margin-top:20px;}
+.det_ch_left li{float:left;width:100%;color:#aaa;font-size:13px;font-family:"宋体";margin-top:10px;}
+.det_ch_left li span{cursor: pointer;}
+.inp_radio{position:relative;top:1px;right:5px;cursor: pointer;}
+.switch_btn{background:url(http://cj.bavlo.com/web/images/detail/switch_btn_bg.jpg) repeat-x;width:122px;text-align:center;border:none;height:52px;line-height:52px;color:#fff;font-family:"微软雅黑";font-size:16px;cursor:pointer;}
+.switch_btn_c{background:url(http://cj.bavlo.com/web/images/detail/switch_btn_c_bg.jpg) repeat-x;width:122px;text-align:center;border:none;height:52px;line-height:52px;color:#fff;font-family:"微软雅黑";font-size:16px;}
+.switch_btn_2d{background:url(http://cj.bavlo.com/web/images/detail/switch_btn_bg.jpg) repeat-x;width:122px;text-align:center;border:none;height:52px;line-height:52px;color:#fff;font-family:"微软雅黑";font-size:16px;cursor:pointer;margin-top: 20px;display:none}
+.switch_btn_2d_c{background:url(http://cj.bavlo.com/web/images/detail/switch_btn_c_bg.jpg) repeat-x;width:122px;text-align:center;border:none;height:52px;line-height:52px;color:#fff;font-family:"微软雅黑";font-size:16px;cursor:pointer;margin-top: 20px;display:none}
+.missing {margin: auto;position: relative;top:130px;width: 190px;}
+#unityPlayer{width:600px;height:500px;border:1px solid #ddd;float: left;}
+.view_3d{float:left;width:602px;}
+.view_3d li{float:left;width:100%;}
+
+.det_ch_cen{float:left;width:420px;margin-top:20px;}
+.det_ch_cen ul{float:left;width:420px;margin-left:1px;}
+.det_ch_cen ul li{float:left;margin-right:9px;}
+.det_ch_cen ul li.show_last{margin-right:0px;}
+.det_ch_cen ul li a{}
+.det_ch_cen ul li img{border:1px solid #d0d0d0;}
+.show_bigImg{width:420px;height:350px;}
+
+.select_s,.select_s_hover,.engrave,.engrave_hover{height:56px;cursor:pointer;background:url(http://cj.bavlo.com/web/images/detail/bj.jpg) no-repeat;border-bottom:1px #ddd solid;width:316px;}
+.select_s_hover,.engrave_hover{background:url(http://cj.bavlo.com/web/images/detail/bj1.jpg) no-repeat;}
+.select_s li,.select_s_hover li,.engrave li,.engrave_hover li{line-height:56px;color:#777;font-size:13px;}
+
+.parameter{width:242px;float:left;}
+.parameter p{margin-left:50px;}
+.parameter p span{margin-right:15px;float:left;}
+.parameter p span.cancel{font-size:12px;color:#bbb;margin-left:2px;height:56px;line-height:56px;_margin: 15px 0 0 2px;_height:41px;_line-height:41px;margin-right:0px;}
+.parameter p span.cancel span{float:none;margin-right:8px;}
+.parameter_ico{float:right;width:70px;height:56px;position:relative;}
+.parameter_ico img{margin:8px 0 0 12px;}
+.parameter_ico span{position:absolute;margin:8px 0 0 12px;width:36px;height:36px;}
+
+.w_314{width:316px;right:0px;top:0px;background:#fff;z-index: 9;}
+.bor{border-bottom:none;width:314px;background:#fff;}
+.vt{position:absolute;border: 1px solid #ddd;top:55px;}
+
+.d_put{background:url(http://cj.bavlo.com/web/images/detail/btn_bg.gif) repeat-x;width:150px;text-align:center;border:none;height:44px;line-height:44px;color:#8c0000;font-family:"微软雅黑";cursor:pointer;margin-top:3px;}
+.d_put_hover{background:url(http://cj.bavlo.com/web/images/detail/btn_bg.png) repeat-x;width:150px;text-align:center;border:none;height:44px;line-height:44px;color:#eee;font-family:"微软雅黑";cursor:pointer;margin-top:3px;background:#8c0000; }
+.m_t_33{margin-top:15px;}
+.m_t_14{margin-top:14px;}
+.m_r_20{margin-right:10px;}
+
+/*�����*/
+.metal_table{width:314px;overflow:hidden;padding-bottom:10px;top:58px;right:0px;background:#fff;z-index:999;border-bottom:1px solid #ddd;border-left:1px solid #ddd;border-right:1px solid #ddd;}
+.metal_table ul{margin:0 auto 12px;width:96%;_width:98%;overflow:hidden;}
+.metal_table ul li{float:left;margin:12px 0 0 8px;display:inline;cursor:pointer; }
+
+.gem_cont{width:314px;overflow:hidden;padding-bottom:10px;right:0px;background:#fff;z-index:999;border-bottom:1px solid #ddd;border-left:1px solid #ddd;border-right:1px solid #ddd}
+.gem_cont ul{margin:0 auto;width:96%;_width:98%;overflow:hidden;}
+.gem_cont li,.gem_conts li{float:left;margin:5px 0px 0 2px;*margin:5px 0px 0 1px;width:48px;cursor: pointer;}
+.gem_cont li a,.gem_conts li a{display:block;width:36px;margin:0 auto;}
+.gem_cont li a .gemImg_mouseOver{border:2px solid #e17878;margin:0px;width:36px;height:36px;}
+.gem_cont li a .gemImg_mouseOut{margin:2px;width:36px;height:36px;}
+.gem_cont li span,.gem_conts li span{display:block;text-align:center;color:#777;line-height:29px;width:50px;}
+
+
+/*��ʯͼƬ*/
+.p_1,.p_1_1{background: url(http://cj.bavlo.com/web/images/g/g1.gif) no-repeat 0px 4px;}
+.p_2,.p_2_2{background: url(http://cj.bavlo.com/web/images/g/g2.gif) no-repeat 0px 4px;}
+.p_3,.p_3_3{background: url(http://cj.bavlo.com/web/images/g/g3.gif) no-repeat 0px 4px;}
+.p_4,.p_4_4{background: url(http://cj.bavlo.com/web/images/g/g4.gif) no-repeat 0px 4px;}
+.p_5,.p_5_5{background: url(http://cj.bavlo.com/web/images/g/g5.gif) no-repeat 0px 4px;}
+.p_6,.p_6_6{background: url(http://cj.bavlo.com/web/images/g/g6.gif) no-repeat 0px 4px;}
+.p_7,.p_7_7{background: url(http://cj.bavlo.com/web/images/g/g7.gif) no-repeat 0px 4px;}
+.p_8,.p_8_8{background: url(http://cj.bavlo.com/web/images/g/g8.gif) no-repeat 0px 4px;}
+.p_9,.p_9_9{background: url(http://cj.bavlo.com/web/images/g/g9.gif) no-repeat 0px 4px;}
+.p_10,.p_10_10{background: url(http://cj.bavlo.com/web/images/g/g10.gif) no-repeat 0px 4px;}
+.p_11,.p_11_11{background: url(http://cj.bavlo.com/web/images/g/g11.gif) no-repeat 0px 4px;}
+.p_12,.p_12_12{background: url(http://cj.bavlo.com/web/images/g/g12.gif) no-repeat 0px 4px;}
+.p_13,.p_13_13{background: url(http://cj.bavlo.com/web/images/g/g13.gif) no-repeat 0px 4px;}
+.p_14,.p_14_14{background: url(http://cj.bavlo.com/web/images/g/g14.gif) no-repeat 0px 4px;}
+.p_15,.p_15_15{background: url(http://cj.bavlo.com/web/images/g/g15.gif) no-repeat 0px 4px;}
+.p_16,.p_16_16{background: url(http://cj.bavlo.com/web/images/g/g16.gif) no-repeat 0px 4px;}
+.p_17,.p_17_17{background: url(http://cj.bavlo.com/web/images/g/g17.gif) no-repeat 0px 4px;}
+.p_18,.p_18_18{background: url(http://cj.bavlo.com/web/images/g/g18.gif) no-repeat 0px 4px;}
+.p_19,.p_19_19{background: url(http://cj.bavlo.com/web/images/g/g19.gif) no-repeat 0px 4px;}
+.p_20,.p_20_20{background: url(http://cj.bavlo.com/web/images/g/g20.gif) no-repeat 0px 4px;}
+.p_21,.p_21_21{background: url(http://cj.bavlo.com/web/images/g/g21.gif) no-repeat 0px 4px;}
+.p_22,.p_22_22{background: url(http://cj.bavlo.com/web/images/g/g22.gif) no-repeat 0px 4px;}
+.p_23,.p_23_23{background: url(http://cj.bavlo.com/web/images/g/g23.gif) no-repeat 0px 4px;}
+.p_24,.p_24_24{background: url(http://cj.bavlo.com/web/images/g/g24.gif) no-repeat 0px 4px;}
+.p_1,.p_2,.p_3,.p_4,.p_5,.p_6,.p_7,.p_8,.p_9,.p_10,.p_11,.p_12,.p_13,.p_14,.p_15,.p_16,.p_17,.p_18,.p_19,.p_20,.p_21,.p_22,.p_23,.p_24{width:40px;height:40px;display:block;}
+.p_1_1,.p_2_2,.p_3_3,.p_4_4,.p_5_5,.p_6_6,.p_7_7,.p_8_8,.p_9_9,.p_10_10,.p_11_11,.p_12_12,.p_13_13,.p_14_14,.p_15_15,.p_16_16,.p_17_17,.p_18_18,.p_19_19,.p_20_20,.p_21_21,.p_22_22,.p_23_23,.p_24_24{background-position:-1px -75px;width:40px;height:40px;display:block;}
+.p_1:hover,.p_2:hover,.p_3:hover,.p_4:hover,.p_5:hover,.p_6:hover,.p_7:hover,.p_8:hover,.p_9:hover,.p_10:hover,.p_11:hover,.p_12:hover,.p_13:hover,.p_14:hover,.p_15:hover,.p_16:hover,.p_17:hover,.p_18:hover,.p_19:hover,.p_20:hover,.p_21:hover,.p_22:hover,.p_23:hover,.p_24:hover{background-position:-1px -75px;}
+.p_1:active,.p_2:active,.p_3:active,.p_4:active,.p_5:active,.p_6:active,.p_7:active,.p_8:active,.p_9:active,.p_10:active,.p_11:active,.p_12:active,.p_13:active,.p_14:active,.p_15:active,.p_16:active,.p_17:active,.p_18:active,.p_19:active,.p_20:active,.p_21:active,.p_22:active,.p_23:active,.p_24:active{background-position:-1px -75px;}
+
+.ruby{width:100%;border-top:1px solid #ddd;}
+.ruby1{width:90%;margin:15px auto 0;}
+.ruby1 h6{font-size:13px;font-family:"宋体";color:#777;margin:5px 0;}
+.ruby1 p{font-size:12px;font-family:"宋体";color:#999;line-height:25px;}
+.ruby1 p span{color:#2aa7ff;}
+
+
+.lettering{width:314px;border-bottom:1px #ddd solid;overflow:hidden;padding-bottom:10px;background:#fff;border-left:1px solid #ddd;border-right:1px solid #ddd}
+.lettering_select,.lettering_select1{width:91%;margin:20px auto;overflow:hidden;}
+.lettering_select1{margin:10px auto;height:26px;}
+.lettering_select input{width:169px;height:23px;line-height:23px;border:1px #bbb solid;}
+.lettering_select select{width:95px;margin-left:15px;height:25px;}
+
+.lettering_select1 li{float:left;font-size:12px;color:#bbb;height:23px;line-height:23px;margin-right:11px;}
+.lettering_select1 li.chara{margin-right:55px;}
+.lettering_select1 li a img{border:1px #bdbdbd solid;}
+.lettering_select1 li.preview_but{margin: 0 0 0 4px;*margin: 0 0 0 3px;}
+.preview_but input{width:92px;height:23px;cursor:pointer;background:url(http://cj.bavlo.com/web/images/detail/but.gif) no-repeat;border:none;}
+
+
+.diameter{width:314px;border-bottom:1px #ddd solid;overflow:hidden;padding-bottom:10px;background:#fff;z-index:999;border-left:1px solid #ddd;border-right:1px solid #ddd}
+.diameter_select{width:280px;margin:20px auto;}
+.diameter_select select{width:280px;height:25px;}
+.diameter p{width:230px;margin:0px auto 10px;height:25px;line-height:25px;font-size:12px;}
+.diameter p a{color:#bbb;text-decoration: underline;}
+.diameter p a:hover {color: #8C0000;}
+.metal_table1{width:314px;overflow:hidden;padding-bottom:10px;right:0px;background:#fff;z-index:999;border-bottom:1px solid #ddd;border-left:1px solid #ddd;border-right:1px solid #ddd}
+.metal_table1 ul{width:100%;overflow:hidden;padding-left:15px;}
+.metal_table1 .chain_type_ul{padding-left:24px;padding-bottom:10px;border-bottom:1px solid #ddd;}
+.metal_table1 .chain_metal_ul li{float:left;margin:12px 0 0 9px;display:inline;cursor:pointer;}
+.metal_table1 .chain_metal_ul a{color: #777;text-decoration: underline;}
+.metal_table1 .chain_metal_ul a:hover{color: #8C0000;}
+.metal_table1 .chain_type_ul li{float:left;display:inline;width:60px;height:25px;line-height:25px;padding:5px 0px;text-align:center;font-size:14px;margin-top:10px;}
+.metal_table1 .chain_type_ul li a{font-size:14px;color:#aaa;padding:0px 3px 2px;*padding:2px 3px 2px;_padding:2px 3px 2px;}
+.metal_table1 .chain_type_ul li a:hover{text-decoration:none;color:#e17878;cursor: pointer;}
+.metal_table1 .chain_type_ul li.chainStyleSelected a{color:#eee;background:#e17878;padding:3px 5px}
+.metal_table1 .chain_ul{width:85%}
+.metal_table1 .chain_ul li{float:left;margin-left:9px;margin-top:14px;border:1px solid #ddd;width:200px;}
+.metal_table1 .chain_ul li a{font-size:13px;color:#777;padding:0px 3px 2px;*padding:2px 3px 2px;_padding:2px 3px 2px;width:200px;}
+.metal_table1 .chain_ul li a:hover{text-decoration:none;color:#e17878;cursor: pointer;}
+.metal_table1 .chain_ul li.chainSelected{background:#e17878;}
+.metal_table1 .chain_ul li.chainSelected a{color:#eee;}
+.metal_des{ border-top: 1px solid #DDD;}
+.sub_bt{width:126px;height:24px;cursor:pointer;background:url(http://cj.bavlo.com/web/images/detail/btn1.gif) no-repeat;border:none;}
+.save_the{position: relative;z-index: 9}
+.viewand_btn,.viewand_over_btn,.viewheart_btn,.viewheart_over_btn{height: 24px;width: 30px;border:0px;cursor: pointer;}
+.viewand_btn {background-image: url(http://cj.bavlo.com/web/images/1a.gif);}
+.viewand_over_btn{background-image: url(http://cj.bavlo.com/web/images/1b.gif);}
+.viewheart_btn{background-image: url(http://cj.bavlo.com/web/images/2b.gif);}
+.viewheart_over_btn{background-image: url(http://cj.bavlo.com/web/images/2a.gif);}
+
+.details{overflow:hidden;width:100%;}
+.detail_cont{overflow:hidden;width:957px;margin:30px auto;padding-top:15px;border-top:1px #bdbdbd solid;position:static;z-index:1}
+.w_p{float:left;color:#777;font:bold 14px/30px tahoma,arial;width:248px;height:auto;margin-left:20px}
+.share{position:absolute;bottom:0px;right:0px;}
+.share span,.share a{float:left;margin-right:5px;}
+.w_410{float:left;width:350px;color:#777;}
+.w_410 li{line-height:30px;padding-left:22px;font-size:14px;width:98%;overflow:hidden}
+.w_410 li b{color:#8e0000}
+.w_410 li label{float:left;;}
+.w_410 li .span{display:block;float:left;}
+.w_410 li  strong{color:#333;}
+.w_320{width:280px;margin:15px 22px 0 0;display:inline;}
+.w_320 .g_price{margin-top:0px;width:100%;overflow:hidden;}
+
+
+.info1{margin:0px auto 25px; padding-top:25px;width:959px;overflow:hidden;}
+.info1 ul{background:#444;height:35px;margin-top:15px}
+.info1 ul li{float:left;border-right:1px #999 solid;font:14px/35px Microsoft YaHei;width:107px;text-align:center;color:#bbb;}
+.info1 ul li a{color:#bbb;float:left;display:block;width:107px;text-align:center;}
+.info1 ul li a:hover{float:left;display:block;width:107px;border-right:1px #999 solid;background:#999;color:#fff;}
+.info1 ul li a.tab{font:bold 16px/35px Microsoft YaHei;background:#999;color:#fff;width:107px;}
+
+
+.about{width:933px;margin:0px auto;position:relative;}
+
+.p1{background:url(http://cj.bavlo.com/web/images/detail/new1.jpg) no-repeat ;height:415px;padding-top:25px}
+.p1 p{line-height:30px;width:680px;float:right;font-size:14px;color:#777}
+.p1 p b{color:#8e0000;font-size:16px;}
+.p1 p em{color:#000;}
+.about p span,.p3 span,.p4 span,.p5 span{display:block;float:left;background:url(http://cj.bavlo.com/web/images/detail/dian.jpg) 0px 7px no-repeat;text-align:center;color:#fff;width:20px;margin-right:5px}
+.about p a{color:#8e0000;text-decoration:underline;font-weight:bold}
+.p2{background:url(http://cj.bavlo.com/web/images/detail/new2.jpg) no-repeat ;height:510px}
+.ind{cursor:pointer;display:block;float:left;position:absolute;left:20px;top:210px;width:560px;height:700px}
+.p3{background:url(http://cj.bavlo.com/web/images/detail/new3.jpg) no-repeat;height:400px;padding-top:15px}
+.p3 h3{background:url(http://cj.bavlo.com/web/images/detail/h4a.jpg) no-repeat ;width:352px;height:45px}
+.p3 p{width:500px;line-height:32px;font-size:14px;color:#333;font-family:"宋体";}
+.ab_s{width:933px;margin:0px auto;padding:10px 0px 10px 0px;overflow:hidden}
+.ab_le{width:165px;float:left;height:114px;}
+.ab_ri{float:left;width:700px;}
+.ab_ri p{line-height:32px;font-size:14px;color:#777;padding-left:5px}
+.p4,.p5{padding-top:20px}
+.p4 h3{background:url(http://cj.bavlo.com/web/images/detail/h4c.jpg) no-repeat;height:140px;padding-top:20px}
+.p4 p,.p5 p{line-height:32px;font-size:14px;color:#777;font-family:"宋体";width:690px;}
+.p4 h6,.p5 h6{margin-top:20px;font-size:12px;color:#bbb;font-family:"宋体";width:690px;font-weight:normal}
+.p4 h6 a,.p5 a{color:#006cff;text-decoration:underline;}
+.p5 h3{background:url(http://cj.bavlo.com/web/images/detail/h4b.jpg) no-repeat;height:140px;padding-top:20px}
+
+/*�ѹ�����*/
+.about1{width:959px;margin:1px auto;position:relative;border-bottom:1px #bbb solid;}
+.user_message{margin-bottom:15px;overflow:hidden;width:100%;}
+.user_name{width:100%;height:37px;line-height:37px;background:#eee;font-size:13px;}
+.user_name label{color:#8c0000;padding-left:16px;float:left;}
+.user_name span{float:right;color:#aaa;padding-right:20px;letter-spacing:1px;}
+.about1 p{padding:5px 16px;font-size:13px;color:#333;line-height:30px;}
+
+.form_block{width:959px;margin:20px auto 0;}
+.textarea_block{width:959px;margin:0px auto 0;background:url(http://cj.bavlo.com/web/images/detail/tex.gif) no-repeat;}
+.textarea_block textarea{color:#bbb;border:none;overflow-y:auto;width:935px;height:88px;*height:85px;background:none;padding:10px 10px 0;}
+.submit_cont{height:31px;width:954px;margin:15px 0 20px;}
+.submit_cont span{float:right;height:31px;line-height:31px;margin-left:30px;color:#bbb;}
+.submit_cont span a{color:#2c8fff;margin-left:5px;}
+.submit_form{background:url(http://cj.bavlo.com/web/images/detail/btn2.gif) no-repeat;width:99px;height:31px;cursor:pointer;border:none;}
+/*��ҳ*/
+.list_page{clear:both;margin:5px auto;width:998px;_width:992px;height:48px;border-top:1px solid #bbb;}
+.list_page h3{float:left;margin-top:18px;height:30px;line-height:30px;font-size:14px;color:#777;font-weight:normal;}
+.list_page ol{float:right;margin:16px 7px 0 0;}
+.list_page ol li{float:right;line-height:16px;height:16px;font-size:16px}
+.list_page ol li a{margin:0 5px;color:#666;}
+.list_page ol li span a{padding:2px 6px;}
+.list_page ol li span a.sel{padding:2px 6px;background:#bb0d0c;color:#fff;}
+.list_page ol li span a:hover{padding:2px 6px;background:#bb0d0c;color:#fff;text-decoration:none;}
+.g_price{margin-top:30px;_margin-top:15px;width:100%;background:#fff;overflow:hidden;}
+.g_price h1{float:right;color:#777;height:45px;line-height:45px;font-size:22px;margin:5px 0;}
+.g_price h1 span{font-size:36px;color:#8e0000;font-weight:normal;}
+
+.hf{float:left;line-height:38px;color:#444;font:14px/38px tahoma,arial;width:175px;}.hf a{width:56px;height:19px;cursor:pointer; display:block;}.closed{background:url(http://cj.bavlo.com/web/images/restore.jpg) no-repeat;}.closed_hover{background:url(http://cj.bavlo.com/web/images/restore1.jpg) no-repeat;}.closed_down{background:url(http://cj.bavlo.com/web/images/restore1.jpg) no-repeat;}
+.line_a{margin: 10px auto 0px;padding: 10px 0 15px;width:95%;overflow:hidden;}
+.line_a a{float:left;display:inline;text-align:center;margin:0px 8px;text-align:center;width:83px;background:#ddd;color:#8c0000;height:30px;line-height:30px}
+.line_a a:hover{background:#8c0000;color:#fff;}
+.similar{width:989px;margin:20px auto 0;height:280px;overflow:hidden;}
+.similar h3{height:35px;margin:0 auto;width:957px;}
+.similar #List1{width:930px;height:220px;margin:5px auto;}
+.List1pics{float:left;width:180px;margin-left:6px;display:inline;position:relative;}
+.List1pics a{color: #AAA;text-decoration:none;}
+.List1pics a:hover{text-decoration: none;}
+.List1pics span {display: block;line-height: 25px;font-size: 12px;color: #AAA;text-align: center;}
+.List1pics .span1{margin-top:15px;}
+.det_ch_cen ul li{cursor:pointer;}
+
+.btn_diy_over{margin-top:18px;margin-right:14px;_margin-top:15px;_margin-right:10px;color:#8C0000;background: #eee;border:1px solid #aaa;float:right;cursor:pointer;display:none}
+.font_btn{color:#eee;background:#8C0000 ;border:0px;margin-left: 25px;margin-top: 2px;height: 24px;cursor:pointer;}
+.chain_radio{position:relative;top:2px;right:1px;cursor: pointer;margin-left: 3px;}
+/*loading*/
+.img_loading {width: 420px;height:31px;position:absolute;top:160px;left:160px;}
+.img_loading_mask{height:350px;width:420px;position:absolute;top:20px;left:160px;background-color: #fff;opacity: 0.6;filter: alpha(opacity = 60);display:none;}
+/*登录*/
+.login{position:fixed;_position: absolute;width:100%;height:100%;top:1px;display:none;background:#333333; filter: alpha(opacity=90); opacity: 0.9;z-index: 999;}
+.login_t{width:900px;height:400px;margin-top:250px;z-index: 101;}
+.w_442{width:442px;}
+.w_442.new{border-left:1px solid #bbb;}
+.side{border:1px solid #bbb;width:440px;background:#fff;}
+.pass{border:1px solid #bbb;width:440px;padding-bottom:3px;background:#fff;}
+.w_442 h3{font-size:14px;font-weight:normal;color:#ddd;background:#444;height:31px;line-height:31px;}
+.w_442 h3 span{padding-left:19px;font-size: 14px;color: #DDD;}
+.word{width:411px;margin:0 auto;border-bottom:1px solid #bbb;overflow:hidden;padding-bottom:18px;}
+.word.redo{border-bottom:none;padding-bottom:23px;}
+.word.redo li{margin:18px 0 0px 30px;}
+.word li{font-size:14px;color:#333;width:90%;float:left;margin:19px 0 0 30px;display:inline;}
+.word li span{float:left;}
+.word li a{font-size: 12px;float: right;margin-right: 25px;}
+.word li label{display:block;width:70px;float:left;text-align:right;margin-right:13px;}
+.inp_text{width:200px;height:17px;line-height:17px;float:left;border:1px solid #9b9b9b;}
+.inp_text1{width:100px;height:17px;line-height:17px;float:left;border:1px solid #9b9b9b;}
+#validateImage{cursor: pointer;margin-left: 20px;margin-top:-4px; float: left;}
+.inp_sub{background:url(http://cj.bavlo.com/web/image01/login/l_1.gif) no-repeat;border:none;width:58px;height:23px;line-height:23px;cursor:pointer;font-size:12px;color:#eee;margin-right:85px;float:right;}
+.inp_che{margin-right:8px;position:relative;top:2px;right:3px;}
+.error{float:left;font-weight:normal;margin-left:5px;font-size:12px;width:50px;color:#ff0000}
+.w_442 p{margin-left:53px;line-height:25px;color:#333;width:336px;}
+.w_442 p.forget{font-size:14px;color:#444;padding:14px 0 11px;}
+.w_442 p.least{margin-left:45px;}
+.w_442 p.forget.least{padding:14px 0 2px;}
+.inp_sub.register{background:url(http://cj.bavlo.com/web/image01/login/l_2.gif) no-repeat;border:none;width:83px;height:23px;line-height:20px;cursor:pointer;font-size:12px;color:#eee;margin-right:85px;float:right;}
+.word li.mail{margin-top:12px;}
+.word li.once{margin-top:0px;}
+.w_442 h5{font-size:14px;color:#777;padding-top:27px;}
+.enjoy li{background:url(http://cj.bavlo.com/web/image01/login/l_3.gif) no-repeat 0px 6px;padding-left:15px;margin-top:8px;}
+.enjoy li a{color:#777;}
+/*页签*/
+.pages{clear:both;margin:5px auto;width:998px;_width:992px;height:48px;}
+.pages h3{float:left;margin-top:18px;height:30px;line-height:30px;font-size:14px;color:#777;font-weight:normal;}
+.pages ol{float:right;margin:16px 36px 0 0;}
+.pages ol li{float:right;line-height:16px;height:16px;}
+.pages ol li a{margin:0 5px;color:#666;}
+.pages ol li span a{padding:2px 4px;}
+.pages ol li span a.sel{padding:2px 4px;background:#bb0d0c;color:#fff;}
+.pages ol li span a:hover{padding:2px 4px;background:#bb0d0c;color:#fff;text-decoration:none;}
+
+/*loadding*/
+.similar_pic{height:35px;width:35px;margin:60px 70px;}
+
+/*detail新增页面*/
+.a{height:35px;line-height:35px;font-size:24px;color:#8c0000;padding-top:20px;font-weight:bold;font-family:arial;}
+.a span{color:#777;font-size:16px;font-family:Microsoft YaHei;margin-left:100px;font-weights:normal;}
+.a b{font-size:16px;margin-right:20px}
+.a1{background:url(http://cj.bavlo.com/web/images/detail/det1.jpg) no-repeat;height:130px;}
+.a2{background:url(http://cj.bavlo.com/web/images/detail/det2.jpg) no-repeat;height:269px}
+.a3{background:url(http://cj.bavlo.com/web/images/detail/det3.jpg) no-repeat;height:251px}
+
+.a4{background:url(http://cj.bavlo.com/web/images/detail/det4.jpg) 0px 20px no-repeat;height:350px;}
+.a5{background:url(http://cj.bavlo.com/web/images/detail/det5.jpg)  no-repeat;height:208px;}
+.jiagong img{margin-top:30px;display:inline}
+.mlr20{margin-left:25px;margin-right:25px}
+.as{padding-left:40px;padding-top:25px;border-top:1px solid #000;margin-top:35px}
+.as b{font-size:16px}
+.as span{margin-left:215px;line-height:20px;}
+.ol_a{width:90%;margin:10px auto;overflow:hidden;}
+.ol_a li{float:left;width:250px;margin-bottom:10px;line-height:30px;}
+.ol_a li span{color:#555;font-size:14px}
+.mlr15{margin-left:35px;margin-right:35px;}
+.ab{width:88%;margin:10px auto;color:#555;font-size:14px;line-height:30px}
+
+.a7{background:url(http://cj.bavlo.com/web/images/detail/det6.jpg)  no-repeat;height:501px;}
+.a8{width:100%;margin:10px auto;*+margin-bottom:30px ;overflow:hidden;}
+.a8 li{float:left;width:200px;margin-bottom:20px;margin-right:40px;line-height:30px;text-align:center;display:inline}
+.a8 li span{color:#555;font-size:14px}
+.a9{background:url(http://cj.bavlo.com/web/images/detail/det8.jpg)  no-repeat;height:565px;}
+.a10{background:url(http://cj.bavlo.com/web/images/detail/det9.jpg) no-repeat;height:378px;}
+.a10 p{float:right;color:#555;width:400px;line-height:32px;text-align:left;font-size:18px;font-family:Microsoft YaHei;margin:10px;}
+/*detail宝石弹出页面*/
+.search_diamond{display:none;position:fixed;_position: absolute;width:100%;height:100%;top:1px;background:#333333; filter: alpha(opacity=90); opacity: 0.9;z-index: 999;}
+.gem_info{padding:10px 20px;z-index:9999;width:959px;height:450px;border:1px solid #aaa;background: white;position:fixed;_position: absolute;display:none}
+.lidixian{position:absolute;left:665px;top:-1px}
+.gem_info_le{float:left;width:490px;background:url(http://cj.bavlo.com/web/images/detail/kxian.jpg) center right no-repeat;}
+.gem_info_le h6{margin:10px 0 20px;width:450px;line-height:40px;border-bottom:1px solid #ddd;color:#8c0000;font-size:16px;}
+.gem_info_ri{float:right;width:440px}
+.gem_info_ri .loading{margin:190px 0px 0px 185px}
+/*颜色*/
+.xzhr{border-top:1px solid #bdbdbd}
+.diam_xz_le{float:left;padding:10px 0px 0px;width:470px;background: url(http://cj.bavlo.com/web/images/diamond/shuxian.jpg) top right no-repeat;overflow:hidden;}
+.zsxz{width:100%;margin:0px auto 20px;overflow:hidden;padding-top:5px;overflow: hidden;font-family: Microsoft YaHei;color: #777;}
+.zsxz dt{float:left;width:70px;line-height:30px;font-size:16px;color: #777;font-family: Microsoft YaHei;}
+.zsxz dd{float:left;width:376px;border:1px solid #ddd;border-right:none;height:30px;line-height:30px;}
+.zsxz dd a{color:#777;font-family:verdana;font-size:13px;width:46px;float:left;display:block;text-align:center;border-right:1px solid #ddd;}
+
+.zsxz .xz_d li{font-size:15px;height:30px;width:46px;float:left;text-align: center;border-right:1px solid #ddd;cursor: pointer;}
+.zsxz .crt_d li{font-size:13px;height:30px;width:46px;float:left;text-align: center;border-right:1px solid #ddd;cursor: pointer;}
+.zsxz .xz_dd li{font-size:14px;height:30px;width:93px;float:left;text-align: center;border-right:1px solid #ddd;cursor: pointer;}
+.color_h,.clarity_h,.cut_h,.symmetry_h,.polish_h,.fluorescence_h,.report_h{color:#fff;background:#fc0000}
+
+/*重量价格*/
+.diam_xz_ri{float:right;padding:10px 0px 0px;width:460px;overflow:hidden;}
+.dwjg{float:right;display:block;width:120px;text-align:right;margin-top: 5px;color: #777;}
+.xz_ri_dl{width:100%;margin:5px auto 30px;overflow:hidden;}
+.xz_ri_dl dt{float:left;width:70px;line-height:30px;font-size:16px;color: #777;font-family: Microsoft YaHei;}
+.xz_ri_dl dd{float:left;width:376px;height:50px;}
+.para{float:left;line-height:28px;width:250px;position:relative;}
+.meter{position:absolute;top:0px;right:0px;float:right;height:2px;background:#ff0000;width:100%}
+.as1,.as2{display:block;width:10px;height:23px;cursor: pointer;}
+.as1{position:absolute;left:-1px;top:-10px}
+.as2{position:absolute;right:-2px;top:-10px}
+.input_le,.input_ri{width:55px;height:13px;text-align:center;color:#777;font-size:12px;}
+.input_le{position:absolute;left:0px ;top:31px}
+.input_ri{position:absolute;right:0px ;top:31px}
+.gjss{width:100%;margin:0px auto 20px;overflow:hidden;}
+.gjss h2{cursor:pointer;float:left;width:100px;font-weight:normal;padding-left:25px;color:#ccc;font-size:16px;}
+.gjss p{float:right;width:860px;border-top:1px solid #bdbdbd;height:1px;margin-top:10px}
+
+
+/*table表格*/
+.tab_sb{float:left;width:430px;margin:10px auto 0px;overflow:hidden;}
+.tab_sb h6{text-align: right;}
+.tab_sb table tr th{font-size:13px;font-family:"宋体";color:#aaa;font-weight:normal;border-bottom:1px solid #dedede;background: url(http://cj.bavlo.com/web/images/diamond/th.jpg) center right no-repeat;}
+.tab_sb table tr th img{cursor:pointer;margin-left:5px}
+.tab_sb table tr td{border-bottom:1px solid #dedede;height:30px;text-align:center;color:#999;}
+.tab_sb table tr{text-align:center}
+.xqks{font-family:Microsoft YaHei;font-size:13px;color:#8c0000;text-align:center;background: url(http://cj.bavlo.com/web/images/diamond/xq.jpg) repeat-x;height:23px;line-height:23px;width:80px;float:left;display:block;margin-left:10px}
+.xqks:hover{color:#8c0000;}
+.tr_bj:hover{background:#ffe5e5;}
+/*分页*/
+.list_page{margin:15px auto;float:left;width:430px;line-height:48px;border-top:1px solid #bbb;}
+.list_page ul{float:right;margin:16px 7px 20px 0;}
+.list_page ul li{float:right;line-height:16px;height:16px;font-size:16px}
+.list_page ul li a{margin:0 5px;color:#666;}
+.list_page ul li span a{padding:2px 6px;}
+.list_page ul li span a.sel{padding:2px 6px;background:#bb0d0c;color:#fff;}
+.list_page ul li span a:hover{padding:2px 6px;background:#bb0d0c;color:#fff;text-decoration:none;}

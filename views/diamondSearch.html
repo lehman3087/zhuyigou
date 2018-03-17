@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=7"/>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title> 钻石_|</title>
+    <meta content="钻石，30分钻石，克拉钻，GIA钻石，钻石定制" name="keywords"/>
+    <meta content="的裸钻、GIA裸钻款式以及个性化的定制服务。" name="description"/>
+	<link href="http://www.bavlo.com/web/css/diamonds.css?version=15?version=15" rel="stylesheet" type="text/css" />
+	<link href="/mobile_sample/static/src/css/index.css?version=7" rel="stylesheet" type="text/css" /> 
+	<link href="http://www.bavlo.com/web/css/jquery.nouislider.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+{% include 'layout/js.html' %}
+
+{% include 'layout/head.html' %}
+
+
+
+<div class="center">  <!--  center  -->
+    <div id="main"><!--  main  -->
+	   <div class="diamond" ><!--  diamond  -->
+			<h5 class="diam_so">搜索钻石</h5>
+			<div class="diam_xz">
+				<p>形状</p>
+				<ul class="diam_u1">
+					{% if xzvalus %}
+						{% for shape in xzvalus%}
+						<li class="shape" shape="{{shape.id}}"><img src="/web/image/product.attribute.value/{{shape.id}}/valueimage"/></li>
+						{% endfor %}
+					{% endif %}
+				</ul>
+			</div>			
+			<div class="diam_xz xzhr">
+				<div class="diam_xz_le">
+					<dl class="zsxz">
+					   <dt>颜色</dt>
+					   <dd class="xz_d">
+						   {% for color in ysvalus%}
+							<li class="color" color="{{color.id}}">{{color.name}}</li>
+							{% endfor %}
+					   </dd>
+					</dl>
+					<dl class="zsxz">
+					   <dt>净度</dt>
+					   <dd class="crt_d">
+
+						   {% for clarity in jdvalus%}
+							<li class="clarity" clarity="{{clarity.id}}">{{clarity.name}}</li>
+							{% endfor %}
+
+					   </dd>
+					</dl>
+					<dl class="zsxz">
+					   <dt>切工</dt>					   
+					   <dd class="xz_dd">
+					   		    {% for cut in qgvalus%}
+							<li class="cut" cut="{{cut.id}}">{{cut.name}}</li>
+							{% endfor %}
+					   </dd>
+					</dl>
+				
+				</div>
+				<div class="diam_xz_ri">
+				    <dl class="xz_ri_dl">
+					   <dt>重量</dt>
+					   <dd>
+						   <div class="para">
+								<div id="weight" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+									
+								</div>
+								<input class="input_le" id="weight_min" type="text" value=""/>
+							    <input class="input_ri" id="weight_max" type="text" value=""/>
+						   </div>
+						   <span class="dwjg">单位：克拉(ct)</span>
+					   </dd>
+					</dl>
+					<dl  class="xz_ri_dl">
+					   <dt>价格</dt>
+					   <dd >
+					      <div class="para">
+							  <div id="price" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+								  
+							  </div>
+							  <input class="input_le" type="text" id="price_min" value=""/>
+							  <input class="input_ri" type="text" id="price_max" value=""/>
+						   </div>
+					   <span class="dwjg">单位：RMB元</span>
+					   </dd>
+					</dl>
+				</div>
+			</div>
+			<div class="gjss" ><h2 class="row8" onclick="shows(document.getElementById('hide1'))"><img src="http://cj.bavlo.com/web/images/diamond/gj2.jpg" onclick="chkClick(this);"></h2><p></p></div>
+			<div class="diam_xz"  id="hide1" style="display:none;padding-top:0px">
+				<div class="diam_xz_le" style="background: url(http://cj.bavlo.com/web/images/diamond/dxian.jpg) top right no-repeat;" >
+					<dl class="zsxz">
+					   <dt>对称</dt>					   
+					   <dd class="xz_dd">
+
+						     {% for symmetry in dcvalus%}
+							<li class="symmetry" symmetry="{{symmetry.id}}">{{symmetry.name}}</li>
+							{% endfor %}
+
+					   </dd>
+					</dl>
+					<dl class="zsxz">
+					   <dt>抛光</dt>
+					   <dd class="xz_dd">
+
+						     {% for polish in pgvalus%}
+							<li class="polish" polish="{{polish.id}}">{{polish.name}}</li>
+							{% endfor %}
+
+
+					   </dd>
+					</dl>
+					<dl class="zsxz">
+					   <dt>规格</dt>
+					   <dd style="border:none"><input type="text" class="calibrated_x"/> mm</dd>
+					</dl>
+				</div>
+				<div class="diam_xz_ri" >
+				    <dl class="zsxz">
+					   <dt>荧光</dt>
+					   <dd class="xz_dd">
+
+						     {% for fluorescence in ygvalus%}
+							<li class="fluorescence" fluorescence="{{fluorescence.id}}">{{fluorescence.name}}</li>
+							{% endfor %}
+
+
+					   </dd>
+					</dl>
+					<dl class="zsxz">
+					   <dt>证书</dt>
+					   <dd class="xz_dd">
+
+						       {% for report in zsvalus%}
+							<li class="report" report="{{report.id}}">{{report.name}}</li>
+							{% endfor %}
+
+					   </dd>
+					</dl>
+				</div>
+			</div>
+            <div class="sosuo" ><p><a href="javascript:search()">开始搜索</a><a href="javascript:reset()">重置</a></p></div>			
+	   </div>
+
+		<div class="result">
+
+
+
+
+
+	       <div class="xuanze" rcount="{{ rcount }}" nowpage="{{nowpage}}" allpage="{{allpage}}">
+			   <span>
+			   		<select id="productsTotal">
+						<option value="24" selected="">每页显示24个</option>
+						<option value="36">每页显示36个</option>
+						<option value="48">每页显示48个</option>
+					</select>
+					找到{{ rcount }}颗钻石
+				</span>
+				<p><a href="javascript:goPage(0)" title="上一页">&lt;</a><b>{{nowpage}}/{{allpage}}</b><a href="javascript:goPage({{nowpage+1}})" title="下一页">&gt;</a></p>
+			</div>
+	       <div class="liebiao">
+		      <div class="tab_sb">
+			     <table id="ResultsTable" border="0" cellpadding="0" cellspacing="0" align="center" width="860px" style="border-right:1px solid #bdbdbd">
+					 <thead>
+						<tr class="title_sb" bgcolor="#ffffff" height="40px" align="center">
+							<th bgcolor="#ffffff" width="56">形状</th>
+
+							<th bgcolor="#ffffff" width="65">颜色</th>
+							<th bgcolor="#ffffff" width="65">净度</th>
+							<th bgcolor="#ffffff" width="57">切工</th>
+							<th bgcolor="#ffffff" width="57">对称</th>
+							<th bgcolor="#ffffff" width="57">抛光</th>
+							<th bgcolor="#ffffff" width="57">证书</th>
+
+							<th bgcolor="#ffffff" width="102" style="cursor: pointer;" class="orderTypeWt">
+								重量
+								<img src="http://cj.bavlo.com/web/images/diamond/up.jpg" alt="orderBy">
+							</th>
+
+							<th bgcolor="#ffffff" width="132" style="cursor: pointer;" class="orderTypePc">
+								价格<img src="http://cj.bavlo.com/web/images/diamond/up.jpg" alt="orderBy">
+							</th>
+							<th bgcolor="#ffffff" width="220" style="background:none">操作</th>
+
+						</tr>
+					</thead>
+
+						<tbody>
+{% if zuanshis %}
+{% for zs in zuanshis%}
+						<tr class="tr_bj">
+
+
+
+							{% for value in zs.attribute_value_ids %}
+
+								{% if value.attribute_id.id==1 %}
+								<td><img src="data:image/png;base64,{{ value.valueimage }}" width="25" alt="shape"></td>
+							{% endif %}
+							{% endfor %}
+
+							{% for value in zs.attribute_value_ids %}
+
+
+							{% if value.attribute_id.id!=1 %}
+							<td>{{ value.name }}</td>
+							{% endif %}
+							{% endfor %}
+							<td>{{ zs.weight }}</td>
+							<td>¥3460</td>
+							<td align="center">
+								<a href="diamondDetail_10417040.html" class="xqks" style="margin-left:20px" target="_blank">详情</a><a href="../web/diaSearchList_10417040.html" target="_blank" class="xqks">匹配款式</a></td>
+
+						</tr>
+
+{% endfor %}
+{% endif %}
+		         </tbody></table>
+			  </div>
+			  <div class="tab_ri"></div>
+		   </div>
+	      <!-- 页签 -->
+
+			<div class="list_page" id="pagination">
+
+			</div>
+
+<script type="text/javascript">
+    function goPage(i){
+    	if(i<1||i>3712){return;};
+    	params.pageIndex=i;
+    	loadResult();
+    	window.scrollTo(0,0);
+    }
+    $(function(){
+    	$("#productsTotal").change(function(){
+    		params.productsTotal=$(this).val();
+    		params.pageIndex=1;
+    		loadResult();
+    	})
+    	$(".orderTypeWt").click(function(){
+			if($(this).find("img").attr("src").indexOf("d.jpg")==-1){
+				$(this).find("img").attr("src",$(this).find("img").attr("src").replace("up.jpg","d.jpg"));
+				params.orderTypeWt="desc";
+			}else{
+				$(this).find("img").attr("src",$(this).find("img").attr("src").replace("d.jpg","up.jpg"));
+				params.orderTypeWt="asc";
+			}
+			loadResult();
+		})
+		$(".orderTypePc").click(function(){
+			if($(this).find("img").attr("src").indexOf("d.jpg")==-1){
+				$(this).find("img").attr("src",$(this).find("img").attr("src").replace("up.jpg","d.jpg"));
+				params.orderTypePc="desc";
+			}else{
+				$(this).find("img").attr("src",$(this).find("img").attr("src").replace("d.jpg","up.jpg"));
+				params.orderTypePc="asc";
+			}
+			loadResult();
+		})
+    });
+</script>
+</div>
+
+
+    </div><!--  //  main  -->
+</div>  <!--  //  center  -->
+<div class="diamond_w" style="display:none">
+				  <div class="diamondinfo">
+					<p>GIA证书:LD99655733</p>
+					<p>编号：2210225</p>
+					<p>形状：</p>
+					<p>重量：0.55克拉</p>
+					<p>颜色：E</p>
+					<p>净度：VVS1</p>
+					<p>切工：EX</p>
+					<p>对称：VG</p>
+					<p>抛光：VG</p>
+					<p>荧光：无</p>
+					<p>价格：17500元</p>
+					
+					<p><a href="diamond_details.html">查看详情</a></p>
+				  
+				  </div>
+			  </div>
+
+
+  {% include 'layout/foot.html' %}
+</body>
+ {% include 'layout/footjs.html' %}
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/diamonds.js?varsion=1"></script>
+</html>

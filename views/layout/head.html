@@ -1,0 +1,128 @@
+ <div id="header"><!-- // header-->
+    <div class="status"  id="dingbu">
+        <div class="li">
+            <div class="diy_left">
+                <ul>
+                    <li style="border-left:1px solid #000"  class="diy_sel"><a href="/index">珠易购</a></li>
+                    <!-- <li ><a href="../web/gemDefault.html">彩色宝石</a></li> -->
+                    <li ><a href="/design" target="_blank" >个性定制</a></li>
+                    <!--<li ><a href="../web/designGem.html" >来石定制</a></li>-->
+                    <!--<li ><a href="../web/picView.html" >我爱经典</a></li>-->
+                    <li ><a href="/join_us" target="_blank"  >招商加盟</a></li>
+                    <li ><a href="#" >VR试戴</a></li>
+                </ul>
+            </div>
+            <div class="right1">
+                <div class="li01">
+
+
+                    <span id="registermenu"><a href="../web/login.html">注册登录</a></span>
+
+                    <input type="hidden" id="userId" value=""/>
+                </div>
+                <!-- 浏览记录 -->
+                <div class="set">
+                    <div class="li02" style="margin-left:-1px"  onmouseover="this.className='rt_menu1';s('set_sub');"  onmouseout="this.className='rt_menu';h('set_sub');"><a href="#" >浏览记录</a>
+                        <div class="img"  id="set_sub" style="display:none">
+                            <div class="rollBox">
+                                <div class="LeftBotton" onclick="hsPageTurning('left')"></div>
+                                <div class="Cont" id="ISL_Cont">
+                                    <input type="hidden" id="historyChange" totalPage="1" indexPage="1"/>
+                                    <div class="ScrCont">
+                                    </div>
+                                </div>
+                                <div class="RightBotton" onclick="hsPageTurning('right')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收藏夹-->
+                <div class="set">
+                    <div class="li03" id="collect" style="margin-left:-1px" onmouseover="this.className='rt_menu3';s('set_sub1');"  onmouseout="this.className='rt_menu2';h('set_sub1');"><a href="#" class="collection">收藏夹</a>
+                        <div class="shoucang" id="set_sub1" style="display:none">
+                            <div class="l_btn" onclick="pageTurning('left')"><img src="http://cj.bavlo.com/web/image/header/le.gif"  alt="left"/></div>
+                            <div class="c_cont">
+                                <input type="hidden" id="collectChange" totalPage="1" indexPage="1"/>
+                                <div class="c_cont1">
+
+                                </div>
+                            </div>
+                            <div class="r_btn" onclick="pageTurning('right')"><img src="http://cj.bavlo.com/web/image/header/ri.gif"  alt="right"/></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 购物车-->
+                <div class="set" id="cartmenu" style="cursor: pointer;">
+                    <div class="li033" id="shoppingCart" style="margin-left:-1px"   onmouseover="this.className='rt_menu5';s('set_sub2');"  onmouseout="this.className='rt_menu4';h('set_sub2');">
+                        <a href="#"><font>购物车</font><em class="li_01" onclick="toPay()">去结帐</em></a>
+                        <div class="gouwu" id="set_sub2" style="display:none">
+                            <p style="color: #E3D1B6;text-align: center; font-size: 16px;">购物车中无商品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <div class="top">
+            <h1 id="logo1"><a href="http://www.bavlo.com">珠易购</a></h1>
+            <div class="tel">
+                <h6>恭候致电 0851-88888888</h6>
+                <div class="sear_ch">
+                    <p><input class="sear_ch_input" type="text" onkeypress="enterSumbit()"  value=""  id="search_str" maxlength="10" /><input class="sear_ch_sub" type="button" onclick="search_all()"  value="" /></p>
+                </div>
+            </div>
+            <!--	<div style="white-space:nowrap;overflow:hidden;width:600px;float: right;margin-right: 25px;margin-top: 10px;height:30px;line-height:30px;">
+                    <div id="scrollobj"  style="float:right;white-space:nowrap;overflow:hidden;width:600px;margin:0 auto">
+                    <span style="color:#777;">公告：因春节期间放假，自今日起到2月28日所下订单，顺延至3月20日发货。敬请谅解！恭祝新年大吉！万事如意！宝珑公司
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>-->
+        </div>
+    </div>
+    <ul class="nav">
+        <li><a id="index" href="/index" class="sel">主页</a></li>
+        <li><a href="/diamondSearch" target="_blank" style="letter-spacing: 1px;">钻石</a></li>
+
+        <li id="Ring">
+            <a href="/products" target="_blank"
+
+            >戒指</a>
+        </li>
+
+        <li id="Necklace">
+            <a href="/products" target="_blank"
+
+            >颈饰</a>
+        </li>
+
+        <li id="Earring">
+            <a href="/products" target="_blank"
+
+            >耳饰</a>
+        </li>
+
+
+
+        <li id="loversJewelry">
+            <a href="/products" target="_blank"
+
+            >情侣</a>
+        </li>
+
+
+
+
+    </ul>
+
+</div>
+<div id="base_content_folw" style="display:none;">
+	<div class="body">
+		<ul>
+			<li><a href="/products">情侣对戒</a></li>
+
+			<li><a href="#">指纹戒指</a></li>
+		</ul>
+	</div>
+</div>

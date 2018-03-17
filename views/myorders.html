@@ -1,0 +1,375 @@
+
+
+
+
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>产品列表</title>
+    <link href="http://cj.bavlo.com/web/css/list2.css" rel="stylesheet" type="text/css" />
+    <link href="http://cj.bavlo.com/web/css/account2.css?version=4" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+
+
+
+<link href="/mobile_sample/static/src/css/header.css?version=40" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/tinybox.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/header.js?version=3"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.validationEngine-zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.validationEngine.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.form.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.lazyload.min.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/json.min.js"></script>
+    <div id="header"><!-- // header-->
+	<div class="status"  id="dingbu">
+		<div class="li">
+			<div class="diy_left">
+				<ul>
+					<li style="border-left:1px solid #000"  class="diy_sel"><a href="/index">珠易购</a></li>
+					<!-- <li ><a href="../web/gemDefault.html">彩色宝石</a></li> -->
+					<li ><a href="../web/designPic.html" >个性定制</a></li>
+					<li ><a href="../web/designGem.html" >来石定制</a></li>
+					<li ><a href="../web/picView.html" >我爱经典</a></li>
+					<li style="display:none;" ><a href="../help/join_us.html" >招商加盟</a></li>
+					<li ><a href="../web/fictitiousShow.html" >虚拟试戴</a></li>
+				</ul>
+			</div>
+			<div class="right1">
+				<div class="li01">
+					
+						<span>Hi,<a href="../account/myprofile.html">
+			      		2438391125
+			      		</a>
+			      		</span>
+						<span><a href="#" onclick="logout()">注销</a></span>
+						<span><a href="../account/myorders.html">我的订单</a></span>
+					
+					
+					<input type="hidden" id="userId" value="6515"/>
+				</div>
+				<!-- 浏览记录 -->
+				<div class="set">
+					<div class="li02" style="margin-left:-1px"  onmouseover="this.className='rt_menu1';s('set_sub');"  onmouseout="this.className='rt_menu';h('set_sub');"><a href="#" >浏览记录</a>
+						<div class="img"  id="set_sub" style="display:none">
+							<div class="rollBox">
+								<div class="LeftBotton" onclick="hsPageTurning('left')"></div>
+									<div class="Cont" id="ISL_Cont">
+									<input type="hidden" id="historyChange" totalPage="1" indexPage="1"/>
+										<div class="ScrCont">											
+										</div>
+									</div>
+								<div class="RightBotton" onclick="hsPageTurning('right')"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 收藏夹-->
+				<div class="set">
+					<div class="li03" id="collect" style="margin-left:-1px" onmouseover="this.className='rt_menu3';s('set_sub1');"  onmouseout="this.className='rt_menu2';h('set_sub1');"><a href="#" class="collection">收藏夹</a>
+						<div class="shoucang" id="set_sub1" style="display:none">
+							<div class="l_btn" onclick="pageTurning('left')"><img src="http://cj.bavlo.com/web/image/header/le.gif"  alt="left"/></div>
+							<div class="c_cont">
+								<input type="hidden" id="collectChange" totalPage="1" indexPage="1"/>
+								<div class="c_cont1">
+																		
+								</div>
+							</div>
+							<div class="r_btn" onclick="pageTurning('right')"><img src="http://cj.bavlo.com/web/image/header/ri.gif"  alt="right"/></div>
+						</div>
+					</div>
+				</div>			
+				<!-- 购物车-->
+				<div class="set" id="cartmenu" style="cursor: pointer;">
+					<div class="li033" id="shoppingCart" style="margin-left:-1px"   onmouseover="this.className='rt_menu5';s('set_sub2');"  onmouseout="this.className='rt_menu4';h('set_sub2');">
+						<a href="#"><font>购物车</font><em class="li_01" onclick="toPay()">去结帐</em></a>
+						<div class="gouwu" id="set_sub2" style="display:none">
+							<p style="color: #E3D1B6;text-align: center; font-size: 16px;">购物车中无商品</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="head">
+		<div class="top">
+			<h1 id="logo1"><a href="http://www.bavlo.com"><img src="http://cj.bavlo.com/web/image/header/logo.jpg"></a></h1>
+			<div class="tel">				
+				<h6>恭候致电 010-88866632</h6>
+			    <div class="sear_ch">
+				   <p><input class="sear_ch_input" type="text" onkeypress="enterSumbit()"  value="巴黎之吻"  id="search_str" maxlength="10" /><input class="sear_ch_sub" type="button" onclick="search_all()"  value="" /></p>
+				</div>
+			</div>
+		<!--	<div style="white-space:nowrap;overflow:hidden;width:600px;float: right;margin-right: 25px;margin-top: 10px;height:30px;line-height:30px;">
+				<div id="scrollobj"  style="float:right;white-space:nowrap;overflow:hidden;width:600px;margin:0 auto">
+				<span style="color:#777;">公告：因春节期间放假，自今日起到2月28日所下订单，顺延至3月20日发货。敬请谅解！恭祝新年大吉！万事如意！宝珑公司
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				</div> 
+			</div>-->
+		</div>
+	</div>
+	<ul class="nav">
+		<li><a id="index" href="http://www.bavlo.com/" >主页</a></li>
+		<li><a href="../web/diamondSearch.html" style="letter-spacing: 1px;">钻石</a></li>
+		
+			<li id="Ring">
+			<a href="../web/Ring_view.html" 
+			 	
+			>戒指</a>
+			</li>
+		
+			<li id="Necklace">
+			<a href="../web/Necklace_view.html" 
+			 	
+			>颈饰</a>
+			</li>
+		
+			<li id="Earring">
+			<a href="../web/Earring_view.html" 
+			 	
+			>耳饰</a>
+			</li>
+		
+			<li id="Wristlet">
+			<a href="../web/Wristlet_view.html" 
+			 	
+			>腕饰</a>
+			</li>
+		
+			<li id="Constellation">
+			<a href="../web/Constellation_view.html" 
+			 	
+			>星座</a>
+			</li>
+		
+			<li id="loversJewelry">
+			<a href="../web/loversJewelry_view.html" 
+			 	
+			>情侣</a>
+			</li>
+		
+			<li id="JewelrySet">
+			<a href="../web/JewelrySet_view.html" 
+			 	
+			>套装</a>
+			</li>
+				
+		<li><a href="../help/loveStroy.html" style="letter-spacing: 1px;">真爱故事</a></li>	
+	</ul>
+		  
+</div>
+<div id="base_content_folw" style="display:none;">
+	<div class="body">
+		<ul>
+			<li><a href="/products">情侣对戒</a></li>
+
+			<li><a href="#">指纹戒指</a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div class="center" style="width:1000px;border:none;background:none;">  <!--  center  -->
+   <div class="left w_200">
+      <h4><a href="#">首页</a> &nbsp;  &gt;  &nbsp; 账户管理</h4>
+       <ul >
+	  <!--<li><a href="myaccount.html">我的账户</a></li> -->   
+		  <li class="all"><a href="#">订单记录</a></li>
+		  <li><a href="myprofile.html">个人资料</a></li>
+		  <li><a href="myaddress.html">收货信息管理</a></li>
+		  <li><a href="changepassword.html">修改密码</a></li>
+	 	  <li><a href="schemeManageView.html">设计方案</a></li>
+	  <!--<li><a href="myfavorites.html">我的收藏</a></li> -->
+	  <!--<li><a href="mybavlocard.html">我的珑卡</a></li> -->
+	  <!--<li><a href="mymessage.html">我的消息</a></li>   -->
+	   </ul>
+   
+   
+   </div>
+   <div class="right w_780" id="contid2" >
+       <div class="table">
+	     <h4>订单记录</h4>
+		 <table cellpadding="1" cellspacing="1" class="it">
+			<tr align="center" bgcolor="#dddddd">
+				<td width="118" height="27" style="border-right:1px solid #aaa;" >订单号</td>
+				<td width="283" height="27" style="border-right:1px solid #aaa;">下单时间</td>
+				<td width="109" height="27"style="border-right:1px solid #aaa;">金额</td>
+				<td width="135" height="27" style="border-right:1px solid #aaa;">状态</td>
+				<td width="128" height="27">操作</td>
+			</tr>
+			
+			<tr align="center">
+			<td colspan="5">
+  	 		没有订单记录！
+  			</td>
+  	 		</tr>
+  			
+  			
+  				
+  			
+			</table>
+			<!-- 
+			<div class="line_t1"></div> -->
+			
+		   
+	   </div>
+   </div>
+   
+    </div>
+
+<div id="footer">
+	<div class="guide">
+		<ul class="g_1">
+			<li><img src="http://cj.bavlo.com/web/image01/footer/a1.jpg" width="175px" height="38px" alt="国土资源部珠宝玉石首饰管理中心"/></li>
+			<li><img src="http://cj.bavlo.com/web/image01/footer/a2.jpg" width="145px" height="38px" alt="快递无忧，全程保险保障"/></li>
+			<li><img src="http://cj.bavlo.com/web/image01/footer/a3.jpg" width="145px" height="38px" alt="30天无障碍退换货"/></li>
+			<li><img src="http://cj.bavlo.com/web/image01/footer/a4.jpg" width="108px" height="38px" alt="终身免费售后服务"/></li>
+			<li class="phone"><img src="http://cj.bavlo.com/web/image01/footer/a5.jpg" width="195px" height="38px" alt="订购热线"/></li>
+		</ul>
+		<ul class="g_2">
+			<li>
+				<label>新手指南</label>
+				<span><a href="../help/3d_jewelry.html" target="_blank">玩转3D珠宝定制</a></span>
+				<span><a href="../help/ringsize.html" target="_blank">如何确定手寸？</a></span>
+				<span><a href="../Education/Article_266.html" target="_blank">彩色宝石挑选技巧</a></span>
+			</li>
+			
+			<li>
+				<label>支付与配送</label>
+				<span><a href="../help/payment.html" target="_blank">支付方式</a></span>
+				<span><a href="../help/delivery.html" target="_blank">配送方式</a></span>
+			</li>
+			
+			<li>
+				<label>售后服务</label>
+				<span><a href="../help/returned_goods.html" target="_blank">退换货政策</a></span>
+				<span><a href="../help/after_service.html" target="_blank">售后服务内容</a></span>
+			</li>
+			
+			<li>
+				<label>质量与信誉</label>
+				<span><a href="../Education/Article_586.html" target="_blank">质量承诺</a></span>
+				<span><a href="../Education/Article_594.html" target="_blank">质量规范</a></span>
+				<span><a href="../Education/Article_590.html" target="_blank">宝珑网资质与信誉</a></span>
+			</li>
+			
+			<li>
+				<label>客服中心</label>
+				<span><a href="../help/shopping_guide.html" target="_blank">购物流程</a></span>
+				<span><a href="../help/faq.html" target="_blank">常见问题</a></span>
+				<span><a href="../help/contact.html" target="_blank">客服联系方式</a></span>
+			</li>
+			
+			<li>
+				<label>新闻中心</label>
+				<span><a href="../Education/Article_282.html" target="_blank">揭秘红宝石</a></span>
+				<span><a href="../Education/Article_270.html" target="_blank">投资彩色宝石</a></span>
+				<span><a href="../Education/Article_234.html" target="_blank">珠宝定制须知</a></span>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<div class="foot">
+		<p class="b_r_t">
+			<a href="../help/about_bavlo.html" target="_blank">关于宝珑网</a>|
+			<a href="../help/privacy_policy.html" target="_blank">隐私条款</a>|
+			<a href="../help/copyright.html" target="_blank">版权声明</a>|
+			<a href="../help/disclaimer.html" target="_blank">免责声明</a>|
+			<a href="../help/join_us.html" target="_blank">经销招商</a>|
+			<a href="../help/friend_link.html" target="_blank">友情链接</a>|
+			<a href="../help/3d_jewelry.html" target="_blank">帮助中心</a>|
+			<a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank">京ICP备11048465号</a>|
+			<a href="#" rel="nofollow" target="_blank">京公网安备11010802013386号</a>|
+			<a href="../sitemap.xml" target="_blank">网站地图</a>
+		</p>
+		<p>Copyright © 2010-2017 bavlo Jewelry Design Studio All Right Reserved.</p>
+	</div>
+</div>
+<div id="toolbar_container">
+   <div class="kefu">
+	   <div class="kefu1">
+		   <div class="back"></div>
+	   </div>
+   </div>
+</div>
+
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery-1.6.min.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.form.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/kefu.js?version=7"></script>	
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/account.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#addCommentary').bind('submit',add);
+})
+function func(){
+//	window.location=$($('#menu .searchmenu > a').get(0)).attr('href');
+}
+function closeThis(){
+	TINY.box.hide();
+}
+function showOrderDetail(id){
+	TINY.box.show('../order/orderDetail?id='+id,1,0,0,1)
+}
+function showGemOrderDetail(id){
+	TINY.box.show('../order/gemOrderDetail?id='+id,1,0,0,1)
+}
+function showDesignOrderDetail(id){
+	TINY.box.show('../order/designOrderDetail?id='+id,1,0,0,1)
+}
+function commentaryContent(){
+	var strVal=$('textarea[name="content"]').val();
+	var cToken=0; 
+	var strReturn="";
+	var str="";
+	//遍历并判断字符串中的每个字符是否是双字节的
+	for(var i=0;i<strVal.length;i++){
+		str=strVal.substring(i,i+1);
+　　		if(strVal.charCodeAt(i) > 255&&strVal.charCodeAt(i)!=9829){
+			cToken+=2;
+		}else{
+			cToken+=1;
+		}
+		if(cToken<=400){
+		strReturn+=str;
+		}	
+		if(cToken>=400){
+			$('textarea[name="content"]').val(strReturn);
+		}	
+	}
+}
+function add(e){
+	var userId=$("#userId").val();			
+	var strVal=$('textarea[name="content"]').val();
+	if(strVal == '' || strVal=='我的评论...(限字200字)'){
+		alert('请填写评论内容。');
+		$('textarea[name="content"]').focus();
+		return false;
+	}
+	if($("#checkUser").attr("checked")=='checked'){
+		$("input[name='anonymous']").val("true");		
+	}else{
+		$("input[name='anonymous']").val("false");
+	}
+	$("input[name='userId']").val(userId);
+	var shoppingOrderId=$("#shoppingOrderId").val();
+	e.preventDefault();
+	$(this).ajaxSubmit({
+		success:function(data){			
+			window.location="orderdetail_"+shoppingOrderId+".html";
+		}
+	});
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>经典图片墙</title>
+<meta content="经典戒指，经典吊坠，经典项链，经典手链，经典耳钉" name="keywords"/>
+<meta content=" 定制经典款式，将经典和个性融合到极致！" name="description"/>
+<link href="http://www.bavlo.com/web/css/picView.css?version=1" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+
+
+
+<link href="/mobile_sample/static/src/css/header.css?version=40" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/tinybox.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/header.js?version=3"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.validationEngine-zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.validationEngine.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.form.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.lazyload.min.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/json.min.js"></script>
+    <div id="header"><!-- // header-->
+    <div class="status"  id="dingbu">
+        <div class="li">
+            <div class="diy_left">
+                <ul>
+                    <li style="border-left:1px solid #000"  class="diy_sel"><a href="/index">珠易购</a></li>
+                    <!-- <li ><a href="../web/gemDefault.html">彩色宝石</a></li> -->
+                    <li ><a href="/design" target="_blank" >个性定制</a></li>
+                    <!--<li ><a href="../web/designGem.html" >来石定制</a></li>-->
+                    <!--<li ><a href="../web/picView.html" >我爱经典</a></li>-->
+                    <li ><a href="/join_us" target="_blank"  >招商加盟</a></li>
+                    <li ><a href="#" >VR试戴</a></li>
+                </ul>
+            </div>
+            <div class="right1">
+                <div class="li01">
+
+
+                    <span id="registermenu"><a href="../web/login.html">注册登录</a></span>
+
+                    <input type="hidden" id="userId" value=""/>
+                </div>
+                <!-- 浏览记录 -->
+                <div class="set">
+                    <div class="li02" style="margin-left:-1px"  onmouseover="this.className='rt_menu1';s('set_sub');"  onmouseout="this.className='rt_menu';h('set_sub');"><a href="#" >浏览记录</a>
+                        <div class="img"  id="set_sub" style="display:none">
+                            <div class="rollBox">
+                                <div class="LeftBotton" onclick="hsPageTurning('left')"></div>
+                                <div class="Cont" id="ISL_Cont">
+                                    <input type="hidden" id="historyChange" totalPage="1" indexPage="1"/>
+                                    <div class="ScrCont">
+                                    </div>
+                                </div>
+                                <div class="RightBotton" onclick="hsPageTurning('right')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收藏夹-->
+                <div class="set">
+                    <div class="li03" id="collect" style="margin-left:-1px" onmouseover="this.className='rt_menu3';s('set_sub1');"  onmouseout="this.className='rt_menu2';h('set_sub1');"><a href="#" class="collection">收藏夹</a>
+                        <div class="shoucang" id="set_sub1" style="display:none">
+                            <div class="l_btn" onclick="pageTurning('left')"><img src="http://cj.bavlo.com/web/image/header/le.gif"  alt="left"/></div>
+                            <div class="c_cont">
+                                <input type="hidden" id="collectChange" totalPage="1" indexPage="1"/>
+                                <div class="c_cont1">
+
+                                </div>
+                            </div>
+                            <div class="r_btn" onclick="pageTurning('right')"><img src="http://cj.bavlo.com/web/image/header/ri.gif"  alt="right"/></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 购物车-->
+                <div class="set" id="cartmenu" style="cursor: pointer;">
+                    <div class="li033" id="shoppingCart" style="margin-left:-1px"   onmouseover="this.className='rt_menu5';s('set_sub2');"  onmouseout="this.className='rt_menu4';h('set_sub2');">
+                        <a href="#"><font>购物车</font><em class="li_01" onclick="toPay()">去结帐</em></a>
+                        <div class="gouwu" id="set_sub2" style="display:none">
+                            <p style="color: #E3D1B6;text-align: center; font-size: 16px;">购物车中无商品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <div class="top">
+            <h1 id="logo1"><a href="http://www.bavlo.com">珠易购</a></h1>
+            <div class="tel">
+                <h6>恭候致电 0851-88888888</h6>
+                <div class="sear_ch">
+                    <p><input class="sear_ch_input" type="text" onkeypress="enterSumbit()"  value=""  id="search_str" maxlength="10" /><input class="sear_ch_sub" type="button" onclick="search_all()"  value="" /></p>
+                </div>
+            </div>
+            <!--	<div style="white-space:nowrap;overflow:hidden;width:600px;float: right;margin-right: 25px;margin-top: 10px;height:30px;line-height:30px;">
+                    <div id="scrollobj"  style="float:right;white-space:nowrap;overflow:hidden;width:600px;margin:0 auto">
+                    <span style="color:#777;">公告：因春节期间放假，自今日起到2月28日所下订单，顺延至3月20日发货。敬请谅解！恭祝新年大吉！万事如意！宝珑公司
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>-->
+        </div>
+    </div>
+    <ul class="nav">
+        <li><a id="index" href="/index" class="sel">主页</a></li>
+        <li><a href="/diamondSearch" target="_blank" style="letter-spacing: 1px;">钻石</a></li>
+
+        <li id="Ring">
+            <a href="/products" target="_blank"
+
+            >戒指</a>
+        </li>
+
+        <li id="Necklace">
+            <a href="/products" target="_blank"
+            >颈饰</a>
+        </li>
+
+        <li id="Earring">
+            <a href="/products" target="_blank">耳饰</a>
+        </li>
+
+
+
+        <li id="loversJewelry">
+            <a href="/products" target="_blank"
+
+            >情侣</a>
+        </li>
+
+
+
+
+    </ul>
+
+</div>
+<div id="base_content_folw" style="display:none;">
+	<div class="body">
+		<ul>
+			<li><a href="/products">情侣对戒</a></li>
+
+			<li><a href="#">指纹戒指</a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+	<div class="main">
+	<div class="pv_top">
+		<form  action="picView" method="post" id="form1">
+			 <ul class="list_ul1 pr_30" id="type" style="padding-left:30px;">
+				<li class="sel_red"  type=""><a>全部</a></li>
+				<li  type="1"><a>戒指</a></li>
+				<li  type="2"><a>耳饰</a></li>
+				<li  type="3"><a>腕饰</a></li>
+				<li  type="4"><a>对戒</a></li>
+				<li  type="5"><a>颈饰</a></li>
+			</ul>
+			<input type="hidden" name="type" value=""/>
+
+				<ul class="list_ul1 pr_30" id="gender" style="padding-left:30px;">
+					<li class="sel_red" gender=""><a>全部</a></li>
+					<li  gender="1"><a>男款</a></li>
+					<li  gender="2"><a>女款</a></li>
+				</ul>
+
+			<input type="hidden" name="gender" value="0"/>
+		</form>
+	</div>
+	<div class="pv_center">
+		<div class="pv_content">
+			<p>第 1 页</p>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP89.jpg!sm" picNo="CSP89" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP90.jpg!sm" picNo="CSP90" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP91.jpg!sm" picNo="CSP91" height="238.00">
+				</div>
+
+
+					<div style="margin-right:0px;" class="divImg">
+
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP92.jpg!sm" picNo="CSP92" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP93.jpg!sm" picNo="CSP93" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP94.jpg!sm" picNo="CSP94" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP95.jpg!sm" picNo="CSP95" height="238.00">
+				</div>
+
+
+					<div style="margin-right:0px;" class="divImg">
+
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP96.jpg!sm" picNo="CSP96" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP97.jpg!sm" picNo="CSP97" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP98.jpg!sm" picNo="CSP98" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP99.jpg!sm" picNo="CSP99" height="238.00">
+				</div>
+
+
+					<div style="margin-right:0px;" class="divImg">
+
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP100.jpg!sm" picNo="CSP100" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP101.jpg!sm" picNo="CSP101" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP102.jpg!sm" picNo="CSP102" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP103.jpg!sm" picNo="CSP103" height="238.00">
+				</div>
+
+
+					<div style="margin-right:0px;" class="divImg">
+
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP104.jpg!sm" picNo="CSP104" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP105.jpg!sm" picNo="CSP105" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP106.jpg!sm" picNo="CSP106" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP107.jpg!sm" picNo="CSP107" height="238.00">
+				</div>
+
+
+					<div style="margin-right:0px;" class="divImg">
+
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP108.jpg!sm" picNo="CSP108" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP109.jpg!sm" picNo="CSP109" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP110.jpg!sm" picNo="CSP110" height="238.00">
+				</div>
+
+
+
+					<div class="divImg">
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP111.jpg!sm" picNo="CSP111" height="238.00">
+				</div>
+
+
+					<div style="margin-right:0px;" class="divImg">
+
+
+					<img class="loadingImgs" src="http://cj.bavlo.com/web/image/header/pic_bg.jpg" data-original="http://img.bavlo.com/ClassicStylesPic/CSP112.jpg!sm" picNo="CSP112" height="238.00">
+				</div>
+
+		</div>
+
+	</div>
+	<div id="pageMoreWrap" class="pageMoreWrap">
+			<a href="javascript:void(0);" class="pageMore" id="pageMore" pageIndex="2" pageCount="112" style="visibility: visible; ">加载更多图片</a>
+			<div id="resultInfo" class="resultInfo" style="visibility: visible; " class="resultInfo">找到相关图片约2682张</div>
+	</div>
+
+
+<div id="footer">
+    <div class="guide">
+        <ul class="g_1">
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a1.jpg" width="175px" height="38px" alt="国土资源部珠宝玉石首饰管理中心"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a2.jpg" width="145px" height="38px" alt="快递无忧，全程保险保障"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a3.jpg" width="145px" height="38px" alt="30天无障碍退换货"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a4.jpg" width="108px" height="38px" alt="终身免费售后服务"/></li>
+            <li class="phone"><img src="" width="195px" height="38px" alt="订购热线"/></li>
+        </ul>
+        <ul class="g_2">
+            <li>
+                <label>新手指南</label>
+
+                <span><a href="../help/ringsize.html" target="_blank">如何确定手寸？</a></span>
+
+            </li>
+
+            <li>
+                <label>支付与配送</label>
+                <span><a href="../help/payment.html" target="_blank">支付方式</a></span>
+                <span><a href="../help/delivery.html" target="_blank">配送方式</a></span>
+            </li>
+
+            <li>
+                <label>售后服务</label>
+                <span><a href="../help/returned_goods.html" target="_blank">退换货政策</a></span>
+                <span><a href="../help/after_service.html" target="_blank">售后服务内容</a></span>
+            </li>
+
+            <li>
+                <label>质量与信誉</label>
+                <span><a href="../Education/Article_586.html" target="_blank">质量承诺</a></span>
+                <span><a href="../Education/Article_594.html" target="_blank">质量规范</a></span>
+                <span><a href="../Education/Article_590.html" target="_blank">珠易购资质与信誉</a></span>
+            </li>
+
+            <li>
+                <label>客服中心</label>
+                <span><a href="../help/shopping_guide.html" target="_blank">购物流程</a></span>
+                <span><a href="../help/faq.html" target="_blank">常见问题</a></span>
+                <span><a href="../help/contact.html" target="_blank">客服联系方式</a></span>
+            </li>
+
+            <li>
+                <label>新闻中心</label>
+
+                <span><a href="../Education/Article_234.html" target="_blank">珠宝定制须知</a></span>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="foot">
+        <p class="b_r_t">
+            <a href="../help/about_bavlo.html" target="_blank">关于珠易购</a>|
+            <a href="../help/privacy_policy.html" target="_blank">隐私条款</a>|
+            <a href="../help/copyright.html" target="_blank">版权声明</a>|
+            <a href="../help/disclaimer.html" target="_blank">免责声明</a>|
+            <a href="../help/join_us.html" target="_blank">经销招商</a>|
+            <a href="../help/friend_link.html" target="_blank">友情链接</a>|
+            <a href="../help/3d_jewelry.html" target="_blank">帮助中心</a>|
+            <a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank">黔ICP备1234567号</a>|
+            <a href="#" rel="nofollow" target="_blank">黔公网安备111111111号</a>|
+            <a href="../sitemap.xml" target="_blank">网站地图</a>
+        </p>
+        <p>Copyright © 2017-2019 ZHUYIGOU Jewelry DesignStudio All Right Reserved.</p>
+    </div>
+</div>
+<div id="toolbar_container">
+   <div class="kefu">
+	   <div class="kefu1">
+		   <div class="back"></div>
+	   </div>
+   </div>
+</div>
+
+</body>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery-1.6.min.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.lazyload.min.js"></script>
+
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/kefu.js?version=7"></script>
+<script type="text/javascript">
+var params={};
+$(function(){
+	$(".loadingImgs").lazyload({
+		effect : "fadeIn",
+		load :function(){
+		}
+	});
+	$("#type li").click(function(){
+		$("input[name='type']").val($(this).attr("type"));
+		if($(this).attr("type")!=null&&$(this).attr("type")!=1){
+			$("input[name='gender']").val("");
+		}else{
+			$("input[name='gender']").val($("#gender").find(".sel_red").attr("gender"));
+		}
+		$("#form1").submit();
+	})
+	$("#gender li").click(function(){
+		$("input[name='gender']").val($(this).attr("gender"));
+		$("#form1").submit();
+	})
+	$(".pageMore").click(function(){
+		var pageIndex=$(this).attr("pageIndex");
+		var pageCount=$(this).attr("pageCount");
+		if(pageCount-pageIndex<0){
+			$(this).text("图片已加载完");
+			return;
+		}
+		var gender=$("input[name='gender']").val();
+		var type=$("input[name='type']").val();
+		$.ajax({
+			url : 'searchPicView',
+			type : 'post',
+			data : {
+				pageIndex:pageIndex	,
+				gender:gender,
+				type:type
+			},
+			dataType : 'json',
+			success : function(data, sts) {
+				$(".pageMore").attr("pageindex",data.pageIndex);
+				var html="<div class='pv_content'><p>第 "+pageIndex+" 页</p>";
+				for(var i=0;i<data.piclist.length;i++){
+					if((i+1)%4==0){
+						html+="<div style='margin-right:0px;' class='divImg'>";
+					}else{
+						html+="<div class='divImg'>";
+					}
+					html+="<img class='loadingImgs' src='http://img.bavlo.com/ClassicStylesPic/"+data.piclist[i].picNo+".jpg!sm' picNo='"+data.piclist[i].picNo+"'  height='"+data.piclist[i].height+"'>";
+					html+="</div>";
+				}
+				html+="</div>";
+				$(".pv_center").append(html);
+				$(".loadingImgs").unbind("mouseover");
+				$(".loadingImgs").bind("mouseover",onmouseover);
+			}
+		})
+	})
+	$(".loadingImgs").bind("mouseover",onmouseover);
+})
+function onmouseover(){
+	var top=$(this).offset().top-21;
+	var left=$(this).offset().left-21;
+	var src=$(this).attr("src");
+	var picNo=$(this).attr("picNo");
+	var html="<div class='pt_div' style='top:"+top+"px;left:"+left+"px'><img class='loadingImgs' src='"+src+"'><p>"+picNo+"</p><div>";
+	$(".main").append(html);
+	$(".pt_div").bind("mouseout",onmouseout)
+}
+function onmouseout(){
+	$(".pt_div").hide();
+}
+</script>
+
+</html>

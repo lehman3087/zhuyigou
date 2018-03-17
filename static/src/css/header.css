@@ -1,0 +1,207 @@
+#header{width:100%;margin:0 auto;background:url(http://cj.bavlo.com/web/image/header/xgbj.jpg) repeat-x;height:227px;}
+.status{position:relative;z-index:11;width:1000px;margin:0 auto;height:35px;}
+.li{position:absolute;top:0px;right:0;width:1000px;height:45px;}
+.right1{float:right;overflow:hidden;}
+.li01{background:url(http://cj.bavlo.com/web/image/header/line4.gif) no-repeat right;font-size:14px;font-family:"微软雅黑";}
+.li01 span{font-family:verdana;}
+.li01  span a.b_line{text-decoration:underline;font-family:verdana;}
+.li01  span a.b_line:hover{text-decoration:underline;}
+.set{float:left;font-size:14px;font-family:"微软雅黑";}
+.li01,.li02,.li03,.li04,.li05,.li033{float:left;color:#666;line-height:35px;}
+.status .li a:hover{ color:#aaa; text-decoration:none;}
+.li01 span{margin-right:10px; display:inline;float:left;}
+.li01 a.b_line{text-decoration:underline;}
+.status .li a{color:#666;text-decoration:none;}
+
+.li02 a,.li03 a,.li033 a,.li04 a{display:block;font-size:14px;font-family:"微软雅黑";}
+
+.li02,.rt_menu{width:88px;height:35px;line-height:35px;text-align:center;background:url(http://cj.bavlo.com/web/image/header/line4.gif) no-repeat right ;}
+.rt_menu1{background: url(http://cj.bavlo.com/web/image/header/sel.gif) no-repeat;width:88px;display:block;height:35px;line-height:35px;cursor:pointer;text-align:center;}
+.rt_menu1 a{position:relative;z-index:999;width:88px;display:block;height:35px;line-height:35px;cursor:pointer;text-align:center;}
+.li03,.rt_menu2{width:77px;height:35px;line-height:35px;text-align:center;background:url(http://cj.bavlo.com/web/image/header/line4.gif) no-repeat right ;}
+.rt_menu3{background: url(http://cj.bavlo.com/web/image/header/sela.gif) no-repeat;width:77px;display:block;height:35px;line-height:35px;cursor:pointer;text-align:center;}
+.rt_menu3 .collection{position:relative;z-index:999;background: url(http://cj.bavlo.com/web/image/header/sela.gif) no-repeat;width:77px;display:block;height:35px;line-height:35px;cursor:pointer;text-align:center;}
+
+.li033,.rt_menu4{width:123px;height:35px;line-height:35px;text-align:center;}
+.rt_menu5{background: url(http://cj.bavlo.com/web/image/header/selb.gif) no-repeat;width:123px;display:block;height:35px;line-height:35px;cursor:pointer;text-align:center;}
+.rt_menu5 a{ position:relative;z-index:999;background: url(http://cj.bavlo.com/web/image/header/selb.gif) no-repeat;width:123px;display:block;height:35px;line-height:35px;cursor:pointer;text-align:center;}
+.li033 font,.rt_menu4 font,.rt_menu5 font{font-size:14px;font-family:"微软雅黑";display:block;float:left;width:76px;}
+.li033 em,.rt_menu5 em,.rt_menu4 em{margin:1px 1px 0 0;font-style:normal;font-size:12px;display:block;float:right;width:45px;background:#8e0000;height:35px;color:#ddd;}
+
+.li04,.rt_menu6{width:77px;height:35px;line-height:25px;text-align:center;background:url(http://cj.bavlo.com/web/image/header/line4.gif) no-repeat right;}
+.rt_menu7{background:#fff;width:77px;display:block;height:35px;line-height:25px;cursor:pointer;text-align:center;}
+.rt_menu7 a{ position:relative;z-index:999;background:#fff;width:77px;display:block;height:35px;line-height:25px;cursor:pointer;text-align:center;}
+
+/*���*/
+.img{position:absolute;left:0px;z-index:99;width:998px;height:160px;background:#fff;}
+
+/*ͼƬ�����б�  �Ӽ�ͷ*/
+.rollBox { clear:both; height:160px; margin:0; width:998px;}
+.rollBox .LeftBotton {margin-top:50px;height:54px; width:35px; background:url(http://cj.bavlo.com/web/image/header/le.gif) no-repeat 10px 0px; float:left; cursor:pointer;}
+.rollBox .RightBotton {margin-top:50px;height:54px; width:30px; background:url(http://cj.bavlo.com/web/image/header/ri.gif) no-repeat ; cursor:pointer; float:right;}
+.rollBox .Cont {margin:30px 0px 0 10px; width:919px; overflow:hidden; float:left;}
+.rollBox .ScrCont {height:120px;width:919px;position:relative;overflow:hidden;float:left;}
+.rollBox .Cont .pic { width:120px;margin-left:2px;margin-right:10px; float:left; text-align:center;display:inline;}
+.rollBox #List1, .rollBox #List2 , .rollBox #List3, .rollBox #List4  { float:left;}
+
+
+/*����*/
+.gouwu{position:absolute;right:0px;z-index:99;background:#fff;width:330px ;padding:20px}
+
+.dl_s{margin-bottom:10px;width:100%;overflow:hidden;padding-bottom:10px;border-bottom:1px solid #ddd}
+.dl_s dt{float:left;margin-right:20px;width:120px;height:100px;display:inline;}
+.dl_s dt img{width:120px;height:100px;;display:inline;}
+.dl_s dd{float:left;color:#777;margin-top:30px;font-size:14px;height:20px;}
+.dl_s dd img{cursor:pointer;}
+.dl_s dd input{position:relative;top:-2px;width:30px;text-align:center;color:#b8b8b8;font-size:16px;height:16px;line-height:16px}
+.dl_s dd span{margin-right:15px;height:20px;line-height:20px;display:inline;float:left;}
+.s2{color:#8c0000;text-align:right;line-height:20px;font-size:20px;padding-top:10px;margin:10px auto 0px;padding-right:40px}
+
+.bnt{margin:25px auto 0px;width:100%;overflow:hidden;text-align:center;float:right;}
+.bnt input{float:right;cursor:pointer;margin:0 10px;text-align:center;width:126px;height:38px;font:16px/38px "΢���ź�";border:0px;}
+.bnt .input{color:#8c0000;background:url(http://cj.bavlo.com/web/image/header/but.gif)repeat-x;}
+.bnt .input_hover{background:url(http://cj.bavlo.com/web/images/detail/btn_bg.png) repeat-x;color:#bbb;}
+/*�ղ�*/
+.shoucang{position:absolute;z-index:99;right:0px;overflow:hidden;background:#fff;width:998px;height:160px}
+.l_btn{float:left;margin:50px 5px 0 10px;display:inline;}
+.r_btn{float:right;margin:50px 10px 0 0px;display:inline;}
+.c_cont{height:130px;margin:20px 0px 0 4px;width:919px;position:relative;overflow:hidden;float:left;}
+.pics{float:left;width:120px;margin-left:1px;display:inline;position:relative;margin-right:10px}
+.pics span{display:block;height:30px;line-height:35px;font-size:14px;}
+.pics em{position:absolute;top:1px;right:1px;display:block;width:11px;height:11px;}
+.pics em a{display:block;width:11px;height:11px;background:url(http://cj.bavlo.com/web/images/cancl_3.gif) no-repeat;}
+.pics em a:hover{display:block;background:url(http://cj.bavlo.com/web/images/cancl_2.gif) no-repeat;}
+
+/*ͷ������*/
+.head{width:100%;height:152px;margin:0 auto;}
+.top{width:1000px;margin:0 auto;height:152px;}
+#logo1{float:left;margin-top:30px;margin-left:50px}
+#logo1 a{ display:block; }
+.tel{width:30%;float:right;text-align:right;margin-top:15px;margin-right:25px;display:inline;}
+.tel h6{margin-top:30px;color:#aaa;font-size:16px}
+.nav{height:40px;width:980px;margin:0 auto 0px;padding-left:20px;}
+.nav li{position:relative;float:left;font:18px/40px "Microsoft YaHei";line-height:40px;color:#ddd;font-size:18px;padding:0px 15px;}
+.nav li a{color:#000;font-size:18px;letter-spacing:5px;}
+.nav li a.sel{color:#ccc;}
+.nav li a:hover{ color:#ccc;}
+.nav li.lir{float:right;}
+.nav li.r_tit{margin-left:30px;}
+.nav li.r_tit a{letter-spacing:0px;margin-right:15px}
+.nav li.lihe{margin-right:5px;}
+.sear_ch{width:189px;float:right;margin-top:13px;background:url(http://cj.bavlo.com/web/image/header/sou.jpg) no-repeat right;height:22px;line-height:22px;display:inline;}
+.sear_ch_input{width:157px;height:20px;line-height:20px;padding-left:5px;color:#777777;float:left;background:none;border:none}
+.sear_ch_sub{width:26px;float:left;height:22px;cursor:pointer;background:none;border:none}
+
+
+/*β��*/
+#footer{width:100%;height:250px;background:url(http://cj.bavlo.com/web/image01/footer/foot_bj.jpg) repeat-x;position: absolute;}
+.bottom{margin:0 auto;width:1000px;height:100px;}
+.bottom ul{padding-top:6px;width:100%;background:url(http://cj.bavlo.com/web/image01/footer/line.gif) no-repeat  right 10px;height:94px;line-height:94px;}
+.bottom ul li{width:327px;background:url(http://cj.bavlo.com/web/image01/footer/line.gif) no-repeat left;float:left;line-height:94px;height:94px;}
+.bottom ul li a{width:207px;margin:27px auto 0;display:block;height:40px;}
+.guide{margin:0px auto;width:100%;backgrounds:url(http://cj.bavlo.com/web/image01/footer/f_bg1.gif) no-repeat top;height:170px;padding-top: 18px;}
+.guide ul{margin:0 auto;width:1000px;padding: 5px 0px 0px;}
+.guide ul li{float:left;}
+.g_1 li{margin-top:10px;margin-right:49px;}
+.g_1 li.phone{float:right;margin-right:10px;display:inline;}
+.g_2{clear:both}
+.g_2 li{width:150px;line-height:22px;padding-left:10px;margin-top:12px;}
+.g_2 li span{display:block;}
+.g_2 li span a{color:#777;}
+.g_2 li span a:hover{text-decoration:underline;}
+.g_2 li label{display:block;color:#ec1c24;font-weight:bold}
+.foot{margin:0 auto;width:1000px;padding-top:8px}
+.foot p{line-height:25px;margin:0 auto;width:90%;color:#777;text-align:center;}
+.foot p a{color:#777;margin:0 6px;}
+
+
+/*�ض���+�ͷ�*/
+#toolbar_container{margin:0 auto;width:100%;position:fixed;overflow:hidden;z-index:10;_position:absolute;right:0px;top:177px;heightx:117px;}
+.survey{background:url(http://cj.bavlo.com/web/images/kefu.gif) no-repeat ;display: none;width:36px;height:117px;position: fixed;_position: absolute;right:0px;bottom: 0px;_bottom: "auto";cursor: pointer;}
+.kefu{width:1000px;margin:0px auto;position:relative;}
+.kefu1{position:absolute;right:-37px;}
+.back{ background:url(http://cj.bavlo.com/web/image01/top.gif) no-repeat ;display: none;width:37px;height:33px;position: fixed;_position: absolute;right: 135px;bottom: 0px;_bottom: "auto";cursor: pointer;}
+
+/*�ͷ�*/
+.qqbox a:link {color: #999999;text-decoration: none;}
+.qqbox a:hover {color: #f80000;text-decoration: none;}
+
+.qqbox{width:88px;height:auto;overflow:hidden;position:fixed;_position:absolute;right:0px;top:250px;color:#999999;z-index:40;font-size:12px;}
+.qqlv{width:25px;height:177px;overflow:hidden;position:relative;float:right;z-index:50;border:1px #bbb solid;border-right:none;background:#eee;}
+.qqkf{width:88px;height:auto;overflow:hidden;right:0;top:0;z-index:99;border:1px solid #bbbbbb;background:#fff;}
+.qqkfbt{width:88px;height:20px;overflow:hidden;background:#333;text-align:right;line-height:20px;position:relative;cursor:pointer;}
+.qqkfhm{width:88px;overflow:hidden;line-height:23px;text-align:center}
+.qqkfhm img{margin-top:10px;}
+.bgdh{height:19px;background:url(http://cj.bavlo.com/web/images/kefu/5.gif) 3px 0px no-repeat;margin:10px auto;padding-bottom:5px;border-bottom:1px solid #bdbdbd}
+.qqtext{float:left;font-size:12px;height:17px;line-height:17px;color:#777;width:55px;margin-left:5px;}
+.qqso{float:left;width:20px;cursor:pointer;}
+.qqkfhm p{background:#bbb;height:25px;line-height:25px;*+line-height:21px;color:#fff;margin-top:5px}
+.qqkfhm p img{margin:0px 0px}
+
+.qqa1,.qqa2,.qqa3{position:absolute;width:25px;float:right;display:block;}
+.qqa1{top:15px;right:0px;height:93px;width: 25px;}
+.qqa2{top:105px;right:0px;height:90px;width: 25px;}
+.qqa3{right:0px;height:15px;cursor: pointer;width: 25px;}
+
+/*top ������*/
+.diy_left{float:left;overflow:hidden;width:488px;_width:480px;}
+.diy_left ul{height:35px;line-height:35px;}
+.diy_left ul li {float:left;text-align:center;border-right:1px solid #000;width:80px;}
+.diy_left ul li a{height:35px;width:80px;font-size:16px;font-family:"微软雅黑";line-height:35px;display:block;float:left;color:#888;}
+.diy_left ul li a:hover{background:#000 url(http://cj.bavlo.com/web/image/header/sel.jpg) repeat-x;color:#999;margin-left:-1px;border-left:1px solid #000;border-right:1px solid #000;height:36px;}
+.diy_sel{background:#000 url(http://cj.bavlo.com/web/image/header/sel.jpg) repeat-x;color:#999;margin-left:-1px;border-left:1px solid #000;border-right:1px solid #000;height:36px;}
+
+#base_content_folw{ position:absolute; z-index:10000000; width:107px; overflow:hidden;}
+#base_content_folw .top{ height:3px; overflow:hidden; background:url(http://cj.bavlo.com/web/pic/base_top.png)!important;background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pic/base_top.png',sizingMethod='image');}
+#base_content_folw .bottom{ height:6px; width:101px; margin:0px auto 0px auto; overflow:hidden; background:url(../pic/base_bottom.png)!important;background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pic/base_bottom.png',sizingMethod='image');}
+#base_content_folw .body{ background-color: #a20002; width:101px; overflow:hidden; margin:0px auto 0px auto;  border-top: none;}
+#base_content_folw .body ul{ padding:5px 0px 0px 0px;}
+#base_content_folw .body li{ padding: 0px 10px 0px 25px; height:17px; line-height:17px; overflow:hidden; margin-bottom: 10px;}
+#base_content_folw .body li a{ color:#E3D1B6;}
+#base_content_folw .body li a:hover{ color:#E3D1B6; text-decoration: none;}
+#base_content_folw .body ul .random{ padding:10px 0px 10px 20px;}
+
+.pics em{position:absolute;top:1px;right:1px;display:block;width:11px;height:11px;}
+.pics em a{display:block;width:11px;height:11px;background:url(http://cj.bavlo.com/web/image01/cancl_3.png) no-repeat;}
+.pics em a:hover{display:block;background:url(http://cj.bavlo.com/web/image01/cancl_2.png) no-repeat;}
+
+.loadingStyleImgs{margin:60px auto;width: 35px;height: 35px;}
+/*order*/
+.zxx_list_title{background:#eeeeee; border:1px solid #cccccc; padding:1em;}
+.zxx_list_content{padding:1em;}
+#tinybox{position:absolute; display:none; background:#333 url(http://cj.bavlo.com/web/image/preload.gif) no-repeat 50% 50%;padding:20px; border:2px solid #e3e3e3; z-index:2000;}
+#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
+#tinycontent{background:#333; font-size:1.1em;}
+
+.center{position:relative;overflow:hidden;height:auto;margin:0px auto 15px;height:auto !important;}
+.bounc{width:1000px;background:#333;padding-bottom:30px;position:absolute;top:70px;left:0;}
+.w_940{width:940px;}
+.w_940 h6{text-align:right;}
+
+.bou_1{width:100%;overflow:hidden;}
+#imgDiv{width:600px;float:left;border:1px solid #bbbbbb;height:500px;}
+#diamondImg{width:600px;float:left;border:1px solid #bbbbbb;height:500px;}
+.bou_1 ul{width:290px;float:right;}
+.bou_1 ul li{font-size:14px;color:#aaa;width:95%;float:left;line-height:30px;}
+.bou_1 ul li label{display:block;width:60px;text-align:right;float:left;}
+.bou_1 ul li span{display:block;width:215px;float:left;}
+.bou_1 p{width:600px;float:left;line-height:30px;font-size:14px;color:#aaa;margin-top:20px;}
+.bou_1 h2{font-size:20px;color:#aaa;margin:60px 20px 0 0;float:right;display:inline;}
+.bou_1 h2 span{color:#fe0000;}
+.bou_1 h2 font{font-size:30px;}
+.bou_1 ul li.det_name{color:#ff0000;font-weight:bold;}
+
+.w_940_design{width:880px;}
+.w_940_design h6{text-align:right;}
+.bou_1_design{width:100%;overflow:hidden;}
+#imgDiv_design{width:480px;height:400px;float:left;border:1px solid #bbbbbb;}
+.bou_1_design ul{width:360px;float:right;}
+.bou_1_design ul li{font-size:14px;color:#aaa;width:95%;float:left;line-height:30px;}
+.bou_1_design ul li label{display:block;width:80px;text-align:right;float:left;}
+.bou_1_design ul li span{display:block;width:215px;float:left;}
+.bou_1_design p{width:600px;float:left;line-height:30px;font-size:14px;color:#aaa;margin-top:20px;}
+.bou_1_design h2{font-size:20px;color:#aaa;margin:60px 20px 0 0;float:right;display:inline;}
+.bou_1_design h2 span{color:#fe0000;}
+.bou_1_design h2 font{font-size:30px;}
+.bou_1_design ul li.det_name{color:#ff0000;font-weight:bold;}
+

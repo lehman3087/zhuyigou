@@ -1,0 +1,449 @@
+
+
+   
+ 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>确认订单</title>
+    <meta content="确认订单 无忧支付" name="keywords"/>
+	<meta content="确认订单" name="description"/>
+    <link href="http://www.bavlo.com/web/css/vip.css?version=4" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://cj.bavlo.com/web/css/validationEngine.jquery.css" type="text/css" media="screen" charset="utf-8" />
+    <style type="text/css">
+		.zxx_list_title{background:#eeeeee; border:1px solid #cccccc; padding:1em;}
+		.zxx_list_content{padding:1em;}
+		#tinybox{position:absolute; display:none; background:#333 url(http://cj.bavlo.com/web/image/preload.gif) no-repeat 50% 50%;padding:20px; border:2px solid #e3e3e3; z-index:2000;}
+		#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
+		#tinycontent{background:#333; font-size:1.1em;}
+		.bounc{width:1000px;background:#333;padding-bottom:30px;position:absolute;top:70px;left:0;}
+		.w_940{width:940px;}
+		.w_940 h6{text-align:right;}
+		
+		.bou_1{width:100%;overflow:hidden;}
+		#imgDiv{width:600px;float:left;border:1px solid #bbbbbb;height:500px;}
+		.bou_1 ul{width:290px;float:right;}
+		.bou_1 ul li{font-size:14px;color:#aaa;width:95%;float:left;line-height:30px;}
+		.bou_1 ul li label{display:block;width:60px;text-align:right;float:left;}
+		.bou_1 ul li span{display:block;width:215px;float:left;}
+		.bou_1 p{width:600px;float:left;line-height:30px;font-size:14px;color:#aaa;margin-top:20px;}
+		.bou_1 h2{font-size:20px;color:#aaa;margin:60px 20px 0 0;float:right;display:inline;}
+		.bou_1 h2 span{color:#fe0000;}
+		.bou_1 h2 font{font-size:30px;}
+		.bou_1 ul li.det_name{color:#ff0000;font-weight:bold;}
+	</style> 
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?dda304f3818fe984ebd38ed897a78225";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+<body>
+
+
+
+
+
+<link href="/mobile_sample/static/src/css/header.css?version=40" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/tinybox.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/header.js?version=3"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.validationEngine-zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.validationEngine.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.form.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.lazyload.min.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/json.min.js"></script>
+    <div id="header"><!-- // header-->
+    <div class="status"  id="dingbu">
+        <div class="li">
+            <div class="diy_left">
+                <ul>
+                    <li style="border-left:1px solid #000"  class="diy_sel"><a href="/index">珠易购</a></li>
+                    <!-- <li ><a href="../web/gemDefault.html">彩色宝石</a></li> -->
+                    <li ><a href="/design" target="_blank" >个性定制</a></li>
+                    <!--<li ><a href="../web/designGem.html" >来石定制</a></li>-->
+                    <!--<li ><a href="../web/picView.html" >我爱经典</a></li>-->
+                    <li ><a href="/join_us" target="_blank"  >招商加盟</a></li>
+                    <li ><a href="#" >VR试戴</a></li>
+                </ul>
+            </div>
+            <div class="right1">
+                <div class="li01">
+
+
+                    <span id="registermenu"><a href="../web/login.html">注册登录</a></span>
+
+                    <input type="hidden" id="userId" value=""/>
+                </div>
+                <!-- 浏览记录 -->
+                <div class="set">
+                    <div class="li02" style="margin-left:-1px"  onmouseover="this.className='rt_menu1';s('set_sub');"  onmouseout="this.className='rt_menu';h('set_sub');"><a href="#" >浏览记录</a>
+                        <div class="img"  id="set_sub" style="display:none">
+                            <div class="rollBox">
+                                <div class="LeftBotton" onclick="hsPageTurning('left')"></div>
+                                <div class="Cont" id="ISL_Cont">
+                                    <input type="hidden" id="historyChange" totalPage="1" indexPage="1"/>
+                                    <div class="ScrCont">
+                                    </div>
+                                </div>
+                                <div class="RightBotton" onclick="hsPageTurning('right')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收藏夹-->
+                <div class="set">
+                    <div class="li03" id="collect" style="margin-left:-1px" onmouseover="this.className='rt_menu3';s('set_sub1');"  onmouseout="this.className='rt_menu2';h('set_sub1');"><a href="#" class="collection">收藏夹</a>
+                        <div class="shoucang" id="set_sub1" style="display:none">
+                            <div class="l_btn" onclick="pageTurning('left')"><img src="http://cj.bavlo.com/web/image/header/le.gif"  alt="left"/></div>
+                            <div class="c_cont">
+                                <input type="hidden" id="collectChange" totalPage="1" indexPage="1"/>
+                                <div class="c_cont1">
+
+                                </div>
+                            </div>
+                            <div class="r_btn" onclick="pageTurning('right')"><img src="http://cj.bavlo.com/web/image/header/ri.gif"  alt="right"/></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 购物车-->
+                <div class="set" id="cartmenu" style="cursor: pointer;">
+                    <div class="li033" id="shoppingCart" style="margin-left:-1px"   onmouseover="this.className='rt_menu5';s('set_sub2');"  onmouseout="this.className='rt_menu4';h('set_sub2');">
+                        <a href="#"><font>购物车</font><em class="li_01" onclick="toPay()">去结帐</em></a>
+                        <div class="gouwu" id="set_sub2" style="display:none">
+                            <p style="color: #E3D1B6;text-align: center; font-size: 16px;">购物车中无商品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <div class="top">
+            <h1 id="logo1"><a href="http://www.bavlo.com">珠易购</a></h1>
+            <div class="tel">
+                <h6>恭候致电 0851-88888888</h6>
+                <div class="sear_ch">
+                    <p><input class="sear_ch_input" type="text" onkeypress="enterSumbit()"  value=""  id="search_str" maxlength="10" /><input class="sear_ch_sub" type="button" onclick="search_all()"  value="" /></p>
+                </div>
+            </div>
+            <!--	<div style="white-space:nowrap;overflow:hidden;width:600px;float: right;margin-right: 25px;margin-top: 10px;height:30px;line-height:30px;">
+                    <div id="scrollobj"  style="float:right;white-space:nowrap;overflow:hidden;width:600px;margin:0 auto">
+                    <span style="color:#777;">公告：因春节期间放假，自今日起到2月28日所下订单，顺延至3月20日发货。敬请谅解！恭祝新年大吉！万事如意！宝珑公司
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>-->
+        </div>
+    </div>
+    <ul class="nav">
+        <li><a id="index" href="/index" class="sel">主页</a></li>
+        <li><a href="/diamondSearch" target="_blank" style="letter-spacing: 1px;">钻石</a></li>
+
+        <li id="Ring">
+            <a href="/products" target="_blank"
+
+            >戒指</a>
+        </li>
+
+        <li id="Necklace">
+            <a href="/products" target="_blank"
+
+            >颈饰</a>
+        </li>
+
+        <li id="Earring">
+            <a href="/products" target="_blank"
+
+            >耳饰</a>
+        </li>
+
+
+
+        <li id="loversJewelry">
+            <a href="/products" target="_blank"
+
+            >情侣</a>
+        </li>
+
+
+
+
+    </ul>
+
+</div>
+<div id="base_content_folw" style="display:none;">
+	<div class="body">
+		<ul>
+			<li><a href="/products">情侣对戒</a></li>
+
+			<li><a href="#">指纹戒指</a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div class="center"><!-- center  -->
+	<div class="w_776">
+		<h3><img src="http://cj.bavlo.com/web/image01/login/l_12.gif"  alt="流程"/></h3>
+		<div class="order">
+			<h4><span>收货人信息</span></h4>
+			
+			
+			<div class="toge">
+				
+				<form action="../account/updateAddress" id="from2" method="post">
+				<input type="hidden" name="id" value="" />
+				<div class="alter" id="sqwin1" style="display:black;">
+					<ul>
+						<li><label>收货人姓名</label><input class="validate[required] inp_text" type="text" maxlength="20" name="realName" id="name" value="" /><img src="http://cj.bavlo.com/web/image01/login/l_14.gif"  alt="必填"/></li>
+						<li><label>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</label>
+							<select class="validate[required] w_91" id="province" onchange="setCity(this.value);getArea();" style="width: 130px;">
+								<option value="">请选择</option>
+							</select>
+							<font>省</font>
+							<select class="validate[required] w_91" id="city" onchange="setCounty(this.value);getArea();">
+								<option value="" selected="selected">请选择</option>
+							</select>
+							<font>市</font>
+							<select class="validate[required] w_91" id="county" onchange="getArea();">
+								<option value="" selected="selected">请选择</option>
+							</select>
+							<font>城区</font>
+							<img src="http://cj.bavlo.com/web/image01/login/l_14.gif"  alt="必填"/>
+							<input type="hidden" value="" name="area" />
+						</li>
+						<li><label>详细地址</label><span id="consigneeShow_addressName"></span><input class="validate[required] inp_text1" type="text" name="detailAddress" maxlength="50"  style="width: 327px;" id="address" value="" /><img src="http://cj.bavlo.com/web/image01/login/l_14.gif"  alt="必填"/></li>
+						<li><label>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编</label><input class="validate[checkZipcode[6]] inp_text" type="text" name="zipcode" id="zipcode" value="" /><img src="http://cj.bavlo.com/web/image01/login/l_14.gif"  alt="必填"/></li>
+						<li><label>固定电话</label><input class="inp_text" type="text" maxlength="20" name="tel" id="tel" value="" /></li>
+						<li><label>手机号码</label><input class="validate[checkPhone[11]] inp_text" type="text" name="cellphone" id="phone" value="" /><img src="http://cj.bavlo.com/web/image01/login/l_14.gif"  alt="必填"/></li>
+						<li><label>E-mail</label><input class="validate[custom[email]] inp_text" type="text" name="email" id="email" value="" /><img src="http://cj.bavlo.com/web/image01/login/l_14.gif"  alt="必填"/></li>
+					</ul>
+					<div class="line_t"></div>
+					<ul class="submit">
+						<li><input class="inp_sub1" type="submit" value="保存" /><!-- <input class="inp_sub1" type="submit" value="新增收件人" /> --></li>
+					</ul>
+				</div>
+				</form>
+			</div>
+			
+			<form action="createOrder" method="post" id="form1">
+			<input type="hidden" name="customerAddressId" value="" />
+									
+			<h4><span>发票信息</span></h4>
+			<div class="toge">
+				<div class="bill">
+					<ul style="padding: 0px;display: black;">
+						<li style="margin-bottom:5px;margin-top: 5px;"><label>是否开发票</label>
+						<input type="radio" name="isKai" value="0" class="radio" checked="checked" />开&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="isKai" value="1" class="radio" />不开
+					</ul>
+					<ul id="detail">
+						<li><label>发票抬头</label>
+						<input class="inp_text" type="text" id="fapiao" style="width: 280px;" name="title"/>
+						<em><a href="javaScript:getRealName();">同收件人姓名</a></em></li>
+						<li><label>发票类型</label><em class="rece">商业零售发票 （机打发票）</em></li>
+						<li><label>发票内容</label><input class="rad" type="radio" name="content"  value="珠宝首饰" checked="checked"/><em class="jew">珠宝首饰</em><input type="radio" name="content" value="办公用品"/><em class="jew">办公用品</em></li>
+					</ul>
+				</div>
+			</div>
+			<h4><span>商品清单</span></h4>
+			<div class="toge">
+				<div class="list">
+					<ul class="style">
+						<li class="row">图片</li>
+						<li><span><img src="http://cj.bavlo.com/web/image01/login/l_18.gif"  alt="line"/></span></li>
+						<li class="row1">商品编号</li>
+						<li><span><img src="http://cj.bavlo.com/web/image01/login/l_18.gif"  alt="line"/></span></li>
+						<li class="row2">商品名称</li>
+						<li><span><img src="http://cj.bavlo.com/web/image01/login/l_18.gif"  alt="line"/></span></li>
+						<li class="row3">数量</li>
+						<li><span><img src="http://cj.bavlo.com/web/image01/login/l_18.gif"  alt="line"/></span></li>
+						<li class="row4">原价</li>
+						<li><span><img src="http://cj.bavlo.com/web/image01/login/l_18.gif" alt="line" /></span></li>
+						<li class="row5">实际价格</li>
+						<li><span><img src="http://cj.bavlo.com/web/image01/login/l_18.gif"  alt="line"/></span></li>
+					</ul>
+					
+						
+							<div>
+								<ul class="style trade">
+									<li class="row"  style="cursor: pointer;" onclick="showShoppingCartIetmDetail(5505)"><font><img src="http://stylepics.bavlo.com/NewStylePic/Ring/82955/RightFront/82955_14586_W18K_14587_CZ_3471_14583_Diamond_21_14584_Diamond_17_14588_Diamond_9_14585_Diamond_5.png" alt=""/></font></li>
+									<li><span></span></li>
+									<li class="row1">82955</li>
+									<li><span></span></li>
+									<li class="row2"></li>
+									<li class="row3">
+									<label>
+									<span class="lessnum" id="lessnum"></span>
+									<input type="text" class="cartnum" value="1" readonly="readonly" disabled="disabled" dsId="5505"/>
+									<span class="morenum" ></span>
+									</span>
+									</label>
+									</li>
+									<li><span></span></li>
+									<li class="row4">￥4179元</li>
+									<li><span></span></li>
+									<li class="row5">￥4179元
+			            				<span class="removeOrderStyle" dsId="5505"></span>
+			            			</li>
+								</ul>
+							
+							</div>
+						
+						
+					
+				</div>
+			</div>
+			
+			<h4><span>结算信息</span></h4>
+			<div class="toge">
+				<div class="address">
+					<h6><span>优惠券</span></h6>
+					<div class="number">
+						<p class="input"><span>输入优惠券编码</span><input class="inp_text" id="codeInput" maxlength="10" type="text" name="codeStr" /><input class="inp_sub2" id="checkCode" type="button" value="添&nbsp;&nbsp;加" /></p>
+					</div>
+				</div>
+				<div class="line_t"></div>
+				
+				<div class="address">
+					<div class="number">
+						<p class="money"> 订单总金额: <font>￥4179元</font></p>
+					</div>
+				</div>
+			</div>
+			<h4><span>快递方式</span></h4>
+			<div class="toge">
+				<div class="card">
+					<div class="bank stop">
+						<img class="l_16 bigger" src="http://cj.bavlo.com/web/image01/login/l_17.gif"  alt="顺丰速递"/>
+					</div>
+					<p>首先顺丰快递，顺丰不及地区用EMS</p>
+					<p style="margin-left: 10px;">
+					<!--<input  type="checkbox" value="false" name="needInsure"/>是否要保险?  -->
+					</p>
+				</div>
+			</div>
+			<h4><span class="sqwin" id="showliuyan">亲手写下您的情感小纸条，它将藏进首饰盒里送达收件人。限140字&nbsp;&nbsp;[-]</span></h4>
+			<div class="toge" id="sqwin3">
+				<li><span>请写清楚</span></li>
+				<li><span>1.&nbsp;收礼物人的昵称；</span></li>
+				<li><span>2.&nbsp;您DIY的小心思和感情祝福；</span></li>
+				<li><span>3.&nbsp;送礼物人的昵称；</span></li>
+				<li><span>珠易购保证把您的这份用心完整地传递到TA的心里！</span></li>
+				<div class="message">
+					<textarea name="orderMessage" onKeyDown="textCounter(this.form.orderMessage,140);" onKeyUp="textCounter(this.form.orderMessage,140);"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="orderError"><span id="error"></span></div>
+		<div class="file">
+		<input id="createOrder" type="submit" value="" /></div>
+		</form>
+	</div>
+</div>
+
+<div id="footer">
+    <div class="guide">
+        <ul class="g_1">
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a1.jpg" width="175px" height="38px" alt="贵州国检"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a2.jpg" width="145px" height="38px" alt="快递无忧，全程保险保障"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a3.jpg" width="145px" height="38px" alt="30天无障碍退换货"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a4.jpg" width="108px" height="38px" alt="终身免费售后服务"/></li>
+            <li class="phone"><img src="" width="195px" height="38px" alt="订购热线"/></li>
+        </ul>
+        <ul class="g_2">
+            <li>
+                <label>新手指南</label>
+
+                <span><a href="../help/ringsize.html" target="_blank">如何确定手寸？</a></span>
+
+            </li>
+
+            <li>
+                <label>支付与配送</label>
+                <span><a href="../help/payment.html" target="_blank">支付方式</a></span>
+                <span><a href="../help/delivery.html" target="_blank">配送方式</a></span>
+            </li>
+
+            <li>
+                <label>售后服务</label>
+                <span><a href="../help/returned_goods.html" target="_blank">退换货政策</a></span>
+                <span><a href="../help/after_service.html" target="_blank">售后服务内容</a></span>
+            </li>
+
+            <li>
+                <label>质量与信誉</label>
+                <span><a href="../Education/Article_586.html" target="_blank">质量承诺</a></span>
+                <span><a href="../Education/Article_594.html" target="_blank">质量规范</a></span>
+                <span><a href="../Education/Article_590.html" target="_blank">珠易购资质与信誉</a></span>
+            </li>
+
+            <li>
+                <label>客服中心</label>
+                <span><a href="../help/shopping_guide.html" target="_blank">购物流程</a></span>
+                <span><a href="../help/faq.html" target="_blank">常见问题</a></span>
+                <span><a href="../help/contact.html" target="_blank">客服联系方式</a></span>
+            </li>
+
+            <li>
+                <label>新闻中心</label>
+
+                <span><a href="../Education/Article_234.html" target="_blank">珠宝定制须知</a></span>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="foot">
+        <p class="b_r_t">
+            <a href="../help/about_bavlo.html" target="_blank">关于珠易购</a>|
+            <a href="../help/privacy_policy.html" target="_blank">隐私条款</a>|
+            <a href="../help/copyright.html" target="_blank">版权声明</a>|
+            <a href="../help/disclaimer.html" target="_blank">免责声明</a>|
+            <a href="../help/join_us.html" target="_blank">经销招商</a>|
+            <a href="../help/friend_link.html" target="_blank">友情链接</a>|
+            <a href="../help/3d_jewelry.html" target="_blank">帮助中心</a>|
+            <a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank">黔ICP备1234567号</a>|
+            <a href="#" rel="nofollow" target="_blank">黔公网安备111111111号</a>|
+            <a href="../sitemap.xml" target="_blank">网站地图</a>
+        </p>
+        <p>Copyright © 2017-2019 ZHUYIGOU Jewelry DesignStudio All Right Reserved.</p>
+    </div>
+</div>
+<div id="toolbar_container">
+   <div class="kefu">
+	   <div class="kefu1">
+		   <div class="back"></div>
+	   </div>
+   </div>
+</div>
+
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery-1.6.min.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/areaData.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.validationEngine-zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.validationEngine.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/jquery.form.js"></script>
+
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/kefu.js?version=7"></script>	
+<script language="javascript" type="text/javascript" src="http://www.bavlo.com/web/js/prepareOrder.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.bavlo.com/web/js/account.js"></script>
+<script type="text/javascript">	
+  
+  
+  	 var total=4179;
+   
+</script>
+</body>
+</html>

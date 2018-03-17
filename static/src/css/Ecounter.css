@@ -1,0 +1,75 @@
+body{ margin:0; padding:0; font:12px/1.5 Microsoft YaHei,arial;background:url(http://cj.bavlo.com/web/image/header/bj.gif) repeat-x;}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, img, small, strike, sub, sup, tt, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0;  }
+ul , li { list-style:none;}
+a{text-decoration:none;}
+.clear{clear:both; display:block; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;}
+#Ecounter{width:1000px;margin:0px auto 20px;overflow:hidden;}
+.ec1,.ec2,.ec3{width:1000px;margin:0px auto;overflow:hidden;}
+.ec1 img{width:100%;overflow:hidden}
+.ec2{width:996px;border-left:2px solid #8c0000;border-right:2px solid #8c0000;border-bottom:1px solid #ddd;padding-bottom:20px}
+.ec3{padding:50px 0px;}
+.ec2 h3{width:90%;margin:0px auto;line-height:35px;color:#8c0000;font-size:20px}
+.ec2 h6{width:90%;margin:0px auto;line-height:35px;color:#999;font-size:16px;}
+.ec2 h5{width:90%;margin:0px auto;line-height:35px;color:#999;font-size:16px;text-indent:2em;}
+.ec2 .f_sw{font-weight:normal}
+.ec2 p{text-align:center;padding:10px auto;margin:10px auto;}
+.ec2 .ep10{text-align:left;font-weight:bold;background: url(../images/ec/ec12.jpg) no-repeat;padding-left:550px;padding-top:40px;height:208px;line-height:35px;color:#8c0000;font-size:17px}
+.ep10 b{line-height:35px;color:#333;font-size:20px;}
+.ep_li{float:left;width:650px;}
+.ep_li p{font-weight:bold;text-align:right;line-height:35px;font-size:20px;color:#0080e3;margin-bottom:20px;font-family:宋体;}
+.ep_li span{font-weight:bold;display:block;text-align:right;line-height:35px;font-size:16px;color:#999;font-family:宋体;}
+.ep_ri{float:right;width:230px;color:#777;padding-left:50px}
+.ep_ri p{margin:10px 0px 0px 0px;font-size:12px;text-align:left;}
+.ep_ri a{font-size:16px;color:#0046ae}
+.ep_ri a:hover{text-decoration:underline;}
+.ec_bg{background: url(http://cj.bavlo.com/web/images/ec/xian.jpg) 715px 30px no-repeat;padding-bottom:40px}
+
+/*  */
+.ec_tut{width:996px;border-left:2px solid #8c0000;border-right:2px solid #8c0000;border-bottom:2px solid #8c0000;padding-bottom:20px}
+.ec_tut h3{width:83%;margin:0px auto;line-height:35px;color:#8c0000;font-size:20px;}
+.ec_tut h6{width:83%;margin:10px auto;line-height:35px;color:#999;font-size:16px}
+.ec_tut p{text-align:center;padding:10px auto;margin:10px auto;}
+.ec_tut h3 a{color:#008aff}
+.ec_tut h3 a:hover{color:#8c0000;}
+.ec_tut h3 span{color:#999;font-size:17px}
+
+/*来图来石定制扉页*/
+#design{width:994px;margin:10px auto 20px;overflow:hidden;border:3px solid #8c0000;}
+.design_a{width:100%;margin:0px auto;overflow:hidden;border-bottom:1px solid #ddd;}
+.designPic{position:relative;overflow:hidden;width:100%; height:430px; margin:0px auto 0px auto;}
+.designPic h2{height:100px;line-height: 100px;color:#555}
+.pic_c {width:100%;height:330px;}
+.pic_c a{width:100%;height:330px;}
+.pic_c a img{float:left;}
+.img_bet{margin:0 2px}
+.design_le{float:left;width:493px}
+.design_ri{float:right;width:480px;margin-right:10px}
+.design_ri h2{text-align:center;margin:50px auto}
+.de_1{font:15px/27px "华文行楷";color:#777;width:470px;}
+.de_2{margin-top:30px;font: 15px/28px "Microsoft YaHei";color:#777}
+.de_2 b{color:#8c0000;font:bold 16px/33px "Microsoft YaHei";}
+.lxzl{text-align:center;margin:80px auto 50px;overflow:hidden;}
+.lxzl a{float:left;display:block;width:197px;height:41px;line-height:41px;text-align:center;color:#ddd;font-size:17px;background: url(http://cj.bavlo.com/web/images/design/ban.jpg) no-repeat;}
+.lxzl a:hover{color:#ffcc00}
+
+.design_a h3{width:70%;margin:80px auto 25px;text-align:center;}
+.design_a h3 span{display:none;color:#777;font:bold 22px/27px "时尚中黑";}
+.de_3{width:68%;margin:0px auto 25px;font: 13px/26px "Microsoft YaHei";color:#777;}
+.de_3 b{font:bold 14px/28px "宋体";color:#8c0000;overflow:hidden;}
+.bavlo{margin:30px auto;text-align:right;}
+.bavlo img{padding-right:35px}
+
+.de_s p{width:440px;margin:0px auto 30px;font:14px/28px "宋体";color:#8c0000;}
+.de_s p b{color:#333;font:bold 15px/27px "宋体";}
+
+/*banner翻页按钮*/
+#rightbtn{position:absolute;left:20px;top:35px;width:31px;height:50px;cursor:pointer;z-index:100;}
+#rightbtn span{display:block; width:21px;height:50px;background:url(http://cj.bavlo.com/web/images/pic/arrowr.png) no-repeat;}
+*html #rightbtn span{ background:none;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src="images/pic/arrowr.png");
+}
+#leftbtn span{display:block; width:21px;height:50px;background:url(http://cj.bavlo.com/web/images/pic/arrow.png) no-repeat;}
+*html #leftbtn span{ background:none;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src="http://cj.bavlo.com/web/images/pic/arrow.png");
+}
+#leftbtn{position:absolute;left:960px;top:35px;width:31px;height:50px;cursor:pointer;z-index:100;}

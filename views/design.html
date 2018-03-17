@@ -1,0 +1,326 @@
+
+
+
+  
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>來图定制_来想法定制_实现您梦寐以求的设计</title>
+    <meta content="来图定制，来想法定制，珠宝定制，私人定制，定制吊坠，定制戒指，定制首饰，定制珠宝" name="keywords"/>
+    <meta content="在这里，我们可以帮您把图纸或想法变成真正的珠宝。您能以最快的速度，最优惠价格，定制到最有意思的珠宝！" name="description"/>
+    <link href="/mobile_sample/static/src/css/Ecounter.css?varsion=4" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+
+
+
+<link href="/mobile_sample/static/src/css/header.css?version=40" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/tinybox.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/header.js?version=3"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.validationEngine-zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.validationEngine.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.form.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.lazyload.min.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/json.min.js"></script>
+    <div id="header"><!-- // header-->
+    <div class="status"  id="dingbu">
+        <div class="li">
+            <div class="diy_left">
+                <ul>
+                    <li style="border-left:1px solid #000"  class="diy_sel"><a href="/index">珠易购</a></li>
+                    <!-- <li ><a href="../web/gemDefault.html">彩色宝石</a></li> -->
+                    <li ><a href="/design" target="_blank" >个性定制</a></li>
+                    <!--<li ><a href="../web/designGem.html" >来石定制</a></li>-->
+                    <!--<li ><a href="../web/picView.html" >我爱经典</a></li>-->
+                    <li ><a href="/join_us" target="_blank"  >招商加盟</a></li>
+                    <li ><a href="#" >VR试戴</a></li>
+                </ul>
+            </div>
+            <div class="right1">
+                <div class="li01">
+
+
+                    <span id="registermenu"><a href="../web/login.html">注册登录</a></span>
+
+                    <input type="hidden" id="userId" value=""/>
+                </div>
+                <!-- 浏览记录 -->
+                <div class="set">
+                    <div class="li02" style="margin-left:-1px"  onmouseover="this.className='rt_menu1';s('set_sub');"  onmouseout="this.className='rt_menu';h('set_sub');"><a href="#" >浏览记录</a>
+                        <div class="img"  id="set_sub" style="display:none">
+                            <div class="rollBox">
+                                <div class="LeftBotton" onclick="hsPageTurning('left')"></div>
+                                <div class="Cont" id="ISL_Cont">
+                                    <input type="hidden" id="historyChange" totalPage="1" indexPage="1"/>
+                                    <div class="ScrCont">
+                                    </div>
+                                </div>
+                                <div class="RightBotton" onclick="hsPageTurning('right')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收藏夹-->
+                <div class="set">
+                    <div class="li03" id="collect" style="margin-left:-1px" onmouseover="this.className='rt_menu3';s('set_sub1');"  onmouseout="this.className='rt_menu2';h('set_sub1');"><a href="#" class="collection">收藏夹</a>
+                        <div class="shoucang" id="set_sub1" style="display:none">
+                            <div class="l_btn" onclick="pageTurning('left')"><img src="http://cj.bavlo.com/web/image/header/le.gif"  alt="left"/></div>
+                            <div class="c_cont">
+                                <input type="hidden" id="collectChange" totalPage="1" indexPage="1"/>
+                                <div class="c_cont1">
+
+                                </div>
+                            </div>
+                            <div class="r_btn" onclick="pageTurning('right')"><img src="http://cj.bavlo.com/web/image/header/ri.gif"  alt="right"/></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 购物车-->
+                <div class="set" id="cartmenu" style="cursor: pointer;">
+                    <div class="li033" id="shoppingCart" style="margin-left:-1px"   onmouseover="this.className='rt_menu5';s('set_sub2');"  onmouseout="this.className='rt_menu4';h('set_sub2');">
+                        <a href="#"><font>购物车</font><em class="li_01" onclick="toPay()">去结帐</em></a>
+                        <div class="gouwu" id="set_sub2" style="display:none">
+                            <p style="color: #E3D1B6;text-align: center; font-size: 16px;">购物车中无商品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <div class="top">
+            <h1 id="logo1"><a href="http://www.bavlo.com">珠易购</a></h1>
+            <div class="tel">
+                <h6>恭候致电 0851-88888888</h6>
+                <div class="sear_ch">
+                    <p><input class="sear_ch_input" type="text" onkeypress="enterSumbit()"  value=""  id="search_str" maxlength="10" /><input class="sear_ch_sub" type="button" onclick="search_all()"  value="" /></p>
+                </div>
+            </div>
+            <!--	<div style="white-space:nowrap;overflow:hidden;width:600px;float: right;margin-right: 25px;margin-top: 10px;height:30px;line-height:30px;">
+                    <div id="scrollobj"  style="float:right;white-space:nowrap;overflow:hidden;width:600px;margin:0 auto">
+                    <span style="color:#777;">公告：因春节期间放假，自今日起到2月28日所下订单，顺延至3月20日发货。敬请谅解！恭祝新年大吉！万事如意！宝珑公司
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>-->
+        </div>
+    </div>
+    <ul class="nav">
+        <li><a id="index" href="/index" class="sel">主页</a></li>
+        <li><a href="/diamondSearch" target="_blank" style="letter-spacing: 1px;">钻石</a></li>
+
+        <li id="Ring">
+            <a href="/products" target="_blank"
+
+            >戒指</a>
+        </li>
+
+        <li id="Necklace">
+            <a href="/products" target="_blank"
+
+            >颈饰</a>
+        </li>
+
+        <li id="Earring">
+            <a href="/products" target="_blank"
+
+            >耳饰</a>
+        </li>
+
+
+
+        <li id="loversJewelry">
+            <a href="/products" target="_blank"
+
+            >情侣</a>
+        </li>
+
+
+
+
+    </ul>
+
+</div>
+<div id="base_content_folw" style="display:none;">
+	<div class="body">
+		<ul>
+			<li><a href="#">情侣对戒</a></li>
+			<li><a href="#">情侣吊坠</a></li>
+			<li><a href="#">情侣手链</a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div id="design"> 
+	<div class="design_a">
+	   <div><img src="/mobile_sample/static/src/img/design/banner1.jpg" /></div>
+	   <div class="design_con">
+	      <div class="design_le"><img src="/mobile_sample/static/src/img/design/a1.jpg" /></div>
+	      <div class="design_ri">
+		    <h2><img src="/mobile_sample/static/src/img/design/h2c.jpg" /></h2>
+		    <div class="de_s">
+			  <p><b>1 我有一张参考图，想以此为基础稍加修改，可以吗？</b><br />
+答：如果您愿意提供参考图片，这将是最高效的合作，目标明确，我们很容易达成一致。</p>
+			  <p><b>2 我有一个想法，你们帮我推荐方案，可以吗？</b><br />
+答：当然可以！我们非常擅长和乐意帮您实现想法，您只要带着想法来就足够了！</p>
+			  <p><b>3 我讨厌雷同，想实现一个独特的设计，你们能做吗？</b><br />
+答：没问题！想象和创意是我们的天赋，可能交流反复的时间会长一些，但对一个专属设计来说是值得的。</p>
+			
+			
+			</div>
+			<div class="lxzl"><a id="onlineSales" href="tencent://message/?uin=2366746022&Site=宝珑网&Menu=yes" style="margin-right:15px">联系设计助理</a><a href="/customized" target="_blank">自己填写设计需求</a></div>
+		  </div>
+	   </div>
+	</div>
+	<div class="design_a" >
+		<h3><img src="/mobile_sample/static/src/img/design/h3a.jpg" /><span>宝珑网个性设计与生产流程简图</span></h3>
+		<p class="de_3"><b>珠宝个性设计的两个阶段</b><br />
+				1 创意设计：形成手绘图稿，或确定参考图片和修改方案；<br />
+				2 工艺设计：起版师根据设计需求进行3D起版，完成最终的3D造型，这一阶段要考虑工艺实现和成本控制等问题；<br />
+				注：很多的个性化设计都需要在工艺、造型、成本、周期之间不断妥协，反复调整，才能最终完成。<br />
+		</p>
+		<p style="text-align:center"><img src="/mobile_sample/static/src/img/design/a2.jpg" /></p>
+		<h3><img src="/mobile_sample/static/src/img/design/h2b.jpg" /><span>放心的把设计交给我们，想象和创意是我们的天赋...</span></h3>
+	</div>
+	<div class="designPic">
+	<h2>客户定制实物照片展示</h2>
+		<div id="designPic" class="pic_c">
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/5.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/2.jpg"><img src="/mobile_sample/static/src/img/design/7.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/22.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/55.jpg"><img src="/mobile_sample/static/src/img/design/5-1.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/37.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/46.jpg"><img src="/mobile_sample/static/src/img/design/33.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/59.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/62.jpg"><img src="/mobile_sample/static/src/img/design/8-1.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/39-1.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/38-1.jpg"><img src="/mobile_sample/static/src/img/design/51.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/40-1.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/29.jpg"><img src="/mobile_sample/static/src/img/design/30.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/55-1.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/42.jpg"><img src="/mobile_sample/static/src/img/design/44.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/35.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/31.jpg"><img src="/mobile_sample/static/src/img/design/54.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/57.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/60.jpg"><img src="/mobile_sample/static/src/img/design/67.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/11.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/23.jpg"><img src="/mobile_sample/static/src/img/design/13.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/32.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/28.jpg"><img src="/mobile_sample/static/src/img/design/45.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/9.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/4.jpg"><img src="/mobile_sample/static/src/img/design/12.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/58.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/50.jpg"><img src="/mobile_sample/static/src/img/design/48.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/52.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/26.jpg"><img src="/mobile_sample/static/src/img/design/41.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/43.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/19.jpg"><img src="/mobile_sample/static/src/img/design/21.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/36.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/16.jpg"><img src="/mobile_sample/static/src/img/design/10.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/3.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/39.jpg"><img src="/mobile_sample/static/src/img/design/63.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/6.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/64.jpg"><img src="/mobile_sample/static/src/img/design/69.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/25.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/40.jpg"><img src="/mobile_sample/static/src/img/design/27.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/65.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/56.jpg"><img src="/mobile_sample/static/src/img/design/38.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/61.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/1.jpg"><img src="/mobile_sample/static/src/img/design/34.jpg"></a>
+			<a href="javascript:void(0)" ><img src="/mobile_sample/static/src/img/design/8.jpg"><img class="img_bet" src="/mobile_sample/static/src/img/design/49.jpg"><img src="/mobile_sample/static/src/img/design/20.jpg"></a>
+		</div>
+		<div id="rightbtn"><span></span></div>
+		<div id="leftbtn"><span></span></div> 
+	</div>
+</div>
+
+<div id="footer">
+    <div class="guide">
+        <ul class="g_1">
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a1.jpg" width="175px" height="38px" alt="贵州国检"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a2.jpg" width="145px" height="38px" alt="快递无忧，全程保险保障"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a3.jpg" width="145px" height="38px" alt="30天无障碍退换货"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a4.jpg" width="108px" height="38px" alt="终身免费售后服务"/></li>
+            <li class="phone"><img src="" width="195px" height="38px" alt="订购热线"/></li>
+        </ul>
+        <ul class="g_2">
+            <li>
+                <label>新手指南</label>
+
+                <span><a href="../help/ringsize.html" target="_blank">如何确定手寸？</a></span>
+
+            </li>
+
+            <li>
+                <label>支付与配送</label>
+                <span><a href="../help/payment.html" target="_blank">支付方式</a></span>
+                <span><a href="../help/delivery.html" target="_blank">配送方式</a></span>
+            </li>
+
+            <li>
+                <label>售后服务</label>
+                <span><a href="../help/returned_goods.html" target="_blank">退换货政策</a></span>
+                <span><a href="../help/after_service.html" target="_blank">售后服务内容</a></span>
+            </li>
+
+            <li>
+                <label>质量与信誉</label>
+                <span><a href="../Education/Article_586.html" target="_blank">质量承诺</a></span>
+                <span><a href="../Education/Article_594.html" target="_blank">质量规范</a></span>
+                <span><a href="../Education/Article_590.html" target="_blank">珠易购资质与信誉</a></span>
+            </li>
+
+            <li>
+                <label>客服中心</label>
+                <span><a href="../help/shopping_guide.html" target="_blank">购物流程</a></span>
+                <span><a href="../help/faq.html" target="_blank">常见问题</a></span>
+                <span><a href="../help/contact.html" target="_blank">客服联系方式</a></span>
+            </li>
+
+            <li>
+                <label>新闻中心</label>
+
+                <span><a href="../Education/Article_234.html" target="_blank">珠宝定制须知</a></span>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="foot">
+        <p class="b_r_t">
+            <a href="../help/about_bavlo.html" target="_blank">关于珠易购</a>|
+            <a href="../help/privacy_policy.html" target="_blank">隐私条款</a>|
+            <a href="../help/copyright.html" target="_blank">版权声明</a>|
+            <a href="../help/disclaimer.html" target="_blank">免责声明</a>|
+            <a href="../help/join_us.html" target="_blank">经销招商</a>|
+            <a href="../help/friend_link.html" target="_blank">友情链接</a>|
+            <a href="../help/3d_jewelry.html" target="_blank">帮助中心</a>|
+            <a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank">黔ICP备1234567号</a>|
+            <a href="#" rel="nofollow" target="_blank">黔公网安备111111111号</a>|
+            <a href="../sitemap.xml" target="_blank">网站地图</a>
+        </p>
+        <p>Copyright © 2017-2019 ZHUYIGOU Jewelry DesignStudio All Right Reserved.</p>
+    </div>
+</div>
+<div id="toolbar_container">
+   <div class="kefu">
+	   <div class="kefu1">
+		   <div class="back"></div>
+	   </div>
+   </div>
+</div>
+
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery-1.6.min.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/kefu.js?version=7"></script>	
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/cycle.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/header.js?varsion=1"></script>
+<script type="text/javascript">
+$(document).ready(function(){			
+	$("#designPic").cycle({
+	    fx: 'fade',
+	    speed: 2000,
+	    timeout: 4000,
+		pause: 1,
+		prev: '#rightbtn',
+        next: '#leftbtn',
+	    pager: '.bottonleft', 
+		pauseOnPagerHover: 1
+	});;
+	$('#link').hover(function(){
+		$(this).css('height','auto');
+	},function(){
+		$(this).css('height','25px');
+	});
+});
+</script>
+</body>
+</html>

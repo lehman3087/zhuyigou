@@ -1,0 +1,931 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>高端定制_2D图案_3D在线_diy_礼品_礼物_戒指_项链_专业首饰定制 | 宝珑网</title>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="3D定制，个性礼品定制，个性礼物定制，首饰定制，2D图案定制，个性项链，个性戒指" name="keywords"/>
+ <meta content="宝珑网全球领先个性定制品牌，提供2D图案、3D在线个性定制服务，为顾客提供专业个性礼品、个性礼物、个性戒指、个性项链的定制，提供国际质检认证，以及最优质的售前，售后服务，宝珑网全球第一家3D在线个性定制，专为个性礼品定制而诞生的国际品牌。" name="description"/>
+<link href="/mobile_sample/static/src/css/customized.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+
+
+
+<link href="/mobile_sample/static/src/css/header.css?version=40" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/tinybox.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/header.js?version=3"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.validationEngine-zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.validationEngine.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.form.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.lazyload.min.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/json.min.js"></script>
+    <div id="header"><!-- // header-->
+    <div class="status"  id="dingbu">
+        <div class="li">
+            <div class="diy_left">
+                <ul>
+                    <li style="border-left:1px solid #000"  class="diy_sel"><a href="/index">珠易购</a></li>
+                    <!-- <li ><a href="../web/gemDefault.html">彩色宝石</a></li> -->
+                    <li ><a href="/design" target="_blank" >个性定制</a></li>
+                    <!--<li ><a href="../web/designGem.html" >来石定制</a></li>-->
+                    <!--<li ><a href="../web/picView.html" >我爱经典</a></li>-->
+                    <li ><a href="/join_us" target="_blank"  >招商加盟</a></li>
+                    <li ><a href="#" >VR试戴</a></li>
+                </ul>
+            </div>
+            <div class="right1">
+                <div class="li01">
+
+
+                    <span id="registermenu"><a href="../web/login.html">注册登录</a></span>
+
+                    <input type="hidden" id="userId" value=""/>
+                </div>
+                <!-- 浏览记录 -->
+                <div class="set">
+                    <div class="li02" style="margin-left:-1px"  onmouseover="this.className='rt_menu1';s('set_sub');"  onmouseout="this.className='rt_menu';h('set_sub');"><a href="#" >浏览记录</a>
+                        <div class="img"  id="set_sub" style="display:none">
+                            <div class="rollBox">
+                                <div class="LeftBotton" onclick="hsPageTurning('left')"></div>
+                                <div class="Cont" id="ISL_Cont">
+                                    <input type="hidden" id="historyChange" totalPage="1" indexPage="1"/>
+                                    <div class="ScrCont">
+                                    </div>
+                                </div>
+                                <div class="RightBotton" onclick="hsPageTurning('right')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收藏夹-->
+                <div class="set">
+                    <div class="li03" id="collect" style="margin-left:-1px" onmouseover="this.className='rt_menu3';s('set_sub1');"  onmouseout="this.className='rt_menu2';h('set_sub1');"><a href="#" class="collection">收藏夹</a>
+                        <div class="shoucang" id="set_sub1" style="display:none">
+                            <div class="l_btn" onclick="pageTurning('left')"><img src="http://cj.bavlo.com/web/image/header/le.gif"  alt="left"/></div>
+                            <div class="c_cont">
+                                <input type="hidden" id="collectChange" totalPage="1" indexPage="1"/>
+                                <div class="c_cont1">
+
+                                </div>
+                            </div>
+                            <div class="r_btn" onclick="pageTurning('right')"><img src="http://cj.bavlo.com/web/image/header/ri.gif"  alt="right"/></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 购物车-->
+                <div class="set" id="cartmenu" style="cursor: pointer;">
+                    <div class="li033" id="shoppingCart" style="margin-left:-1px"   onmouseover="this.className='rt_menu5';s('set_sub2');"  onmouseout="this.className='rt_menu4';h('set_sub2');">
+                        <a href="#"><font>购物车</font><em class="li_01" onclick="toPay()">去结帐</em></a>
+                        <div class="gouwu" id="set_sub2" style="display:none">
+                            <p style="color: #E3D1B6;text-align: center; font-size: 16px;">购物车中无商品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <div class="top">
+            <h1 id="logo1"><a href="http://www.bavlo.com">珠易购</a></h1>
+            <div class="tel">
+                <h6>恭候致电 0851-88888888</h6>
+                <div class="sear_ch">
+                    <p><input class="sear_ch_input" type="text" onkeypress="enterSumbit()"  value=""  id="search_str" maxlength="10" /><input class="sear_ch_sub" type="button" onclick="search_all()"  value="" /></p>
+                </div>
+            </div>
+            <!--	<div style="white-space:nowrap;overflow:hidden;width:600px;float: right;margin-right: 25px;margin-top: 10px;height:30px;line-height:30px;">
+                    <div id="scrollobj"  style="float:right;white-space:nowrap;overflow:hidden;width:600px;margin:0 auto">
+                    <span style="color:#777;">公告：因春节期间放假，自今日起到2月28日所下订单，顺延至3月20日发货。敬请谅解！恭祝新年大吉！万事如意！宝珑公司
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>-->
+        </div>
+    </div>
+    <ul class="nav">
+        <li><a id="index" href="/index" class="sel">主页</a></li>
+        <li><a href="/diamondSearch" target="_blank" style="letter-spacing: 1px;">钻石</a></li>
+
+        <li id="Ring">
+            <a href="/products" target="_blank"
+
+            >戒指</a>
+        </li>
+
+        <li id="Necklace">
+            <a href="/products" target="_blank"
+            >颈饰</a>
+        </li>
+
+        <li id="Earring">
+            <a href="/products" target="_blank">耳饰</a>
+        </li>
+
+
+
+        <li id="loversJewelry">
+            <a href="/products" target="_blank"
+
+            >情侣</a>
+        </li>
+
+
+
+
+    </ul>
+
+</div>
+<div id="base_content_folw" style="display:none;">
+	<div class="body">
+		<ul>
+			<li><a href="/products">情侣对戒</a></li>
+
+			<li><a href="#">指纹戒指</a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div class="center">  <!--  center  -->
+	<div id="main">
+		
+		<div class="steps">
+			<h6>Make it personal</h6>
+			<div class="custom_logo"><img src="http://cj.bavlo.com/web/images/cus/class_logo.gif" alt="logo"/></div>
+			<div class="line_28"><img src="http://cj.bavlo.com/web/images/cus/line.gif"  alt="line"/></div>
+			<div class="steps123">
+				<ul class="f_14">
+					<li>1 提交设计需求</li>
+					<li>2 完成设计</li>
+					<li>3 付全款</li>
+					<li>4 生产</li>
+					<li class="w_120">5 交付</li>
+				</ul>				
+				<ul class="f_12">
+					<li>Making Plans</li>
+					<li>Design</li>
+					<li>Payment</li>
+					<li>Manufacture</li>
+					<li class="w_120">Deliver</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="solution">
+			<font>需求编号  20180308013553-1<input type="hidden" value="20180308013553-1" id="schemeNo"/><input type="hidden" value="" id="checkType"/></font>
+			<span><a href="">定制须知</a></span>
+			<span style="width:294px;">
+			<div id="customer">
+					
+				
+					[<a href="javascript:void(0)" onclick="showLab('login')">登录|注册</a>]
+				
+				<input type="hidden" id="userId" value=""/>
+			</div>
+			</span>
+			<p><a href="javascript:void(0)" onclick="reginput()">保存</a><a href="/web/customized.html">新建</a></p>
+		</div>
+	<div class="customized_cont">
+		
+			<div class="subscription" style="display:none;border-bottom:1px solid #bbb">
+							<span>订金：￥200元</span><input type="button" class="payoff" id="subscriptionPayoff" />				
+			</div>
+			
+			<h3><span>1</span>需求概述</h3>
+			
+			<div class="demand">
+				<ul>
+					<li>类型</li>
+					<li class="sel_01">
+						<select id="type">
+							
+									<option value="戒指" >
+										戒指
+									</option>
+							
+									<option value="耳坠" >
+										耳坠
+									</option>
+							
+									<option value="手链" >
+										手链
+									</option>
+							
+									<option value="颈饰" >
+										颈饰
+									</option>
+							
+									<option value="耳钉" >
+										耳钉
+									</option>
+							
+									<option value="手镯" >
+										手镯
+									</option>
+							
+									<option value="情侣对戒" >
+										情侣对戒
+									</option>
+							
+									<option value="情侣项链" >
+										情侣项链
+									</option>
+							
+									<option value="情侣手链" >
+										情侣手链
+									</option>
+							
+						</select>
+					</li>
+					<li id="textSize">手寸</li>
+					<li class="sel_02">
+						<select id="size">
+								
+									<option value="1" >
+											1号 内径
+											12.5
+											mm 周长39.3mm
+								   </option>
+								
+									<option value="2" >
+											2号 内径
+											12.8
+											mm 周长40.2mm
+								   </option>
+								
+									<option value="3" >
+											3号 内径
+											13.2
+											mm 周长41.4mm
+								   </option>
+								
+									<option value="4" >
+											4号 内径
+											13.5
+											mm 周长42.4mm
+								   </option>
+								
+									<option value="5" >
+											5号 内径
+											13.8
+											mm 周长43.4mm
+								   </option>
+								
+									<option value="6" >
+											6号 内径
+											14.2
+											mm 周长44.6mm
+								   </option>
+								
+									<option value="7" >
+											7号 内径
+											14.6
+											mm 周长45.8mm
+								   </option>
+								
+									<option value="8" >
+											8号 内径
+											14.9
+											mm 周长46.8mm
+								   </option>
+								
+									<option value="9" >
+											9号 内径
+											15.2
+											mm 周长47.7mm
+								   </option>
+								
+									<option value="10" >
+											10号 内径
+											15.6
+											mm 周长49.0mm
+								   </option>
+								
+									<option value="11" >
+											11号 内径
+											16
+											mm 周长50.2mm
+								   </option>
+								
+									<option value="12" >
+											12号 内径
+											16.3
+											mm 周长51.2mm
+								   </option>
+								
+									<option value="13" >
+											13号 内径
+											16.6
+											mm 周长52.3mm
+								   </option>
+								
+									<option value="14" >
+											14号 内径
+											17
+											mm 周长53.4mm
+								   </option>
+								
+									<option value="15" >
+											15号 内径
+											17.3
+											mm 周长54.3mm
+								   </option>
+								
+									<option value="16" >
+											16号 内径
+											17.7
+											mm 周长55.6mm
+								   </option>
+								
+									<option value="17" >
+											17号 内径
+											18.1
+											mm 周长56.8mm
+								   </option>
+								
+									<option value="18" >
+											18号 内径
+											18.4
+											mm 周长57.9mm
+								   </option>
+								
+									<option value="19" >
+											19号 内径
+											18.7
+											mm 周长58.7mm
+								   </option>
+								
+									<option value="20" >
+											20号 内径
+											19.1
+											mm 周长60.0mm
+								   </option>
+								
+									<option value="21" >
+											21号 内径
+											19.5
+											mm 周长61.2mm
+								   </option>
+								
+									<option value="22" >
+											22号 内径
+											19.8
+											mm 周长62.2mm
+								   </option>
+								
+									<option value="23" >
+											23号 内径
+											20.1
+											mm 周长63.1mm
+								   </option>
+								
+									<option value="24" >
+											24号 内径
+											20.4
+											mm 周长64.1mm
+								   </option>
+								
+									<option value="25" >
+											25号 内径
+											20.8
+											mm 周长65.3mm
+								   </option>
+								
+									<option value="26" >
+											26号 内径
+											21.2
+											mm 周长66.6mm
+								   </option>
+								
+									<option value="27" >
+											27号 内径
+											21.6
+											mm 周长67.7mm
+								   </option>
+									
+						</select><span><a href="http://www.bavlo.com/help/ringsize.html" target="_blank">如何选择手寸？</a></span></li>
+					<li>预算</li>
+					<li class="sel_01"><select id="budget">
+						<option value="">不限</option>
+						<option value="1000以下"  >1000以下</option>
+						<option value="1000~3000"  >1000~3000</option>
+						<option value="3000~5000"  >3000~5000</option>
+						<option value="5000~10000"  >5000~10000</option>
+						<option value="10000以上"  >10000以上</option>
+					</select>
+					</li>
+				</ul>
+				<ul>
+					<li>用途</li>
+					<li>
+						
+						<input type="hidden" name="purposes" value=""/>
+						
+						<input name="purpose" class="checkbox" type="checkbox"  value="订婚" checked="checked" /><font class="click_font">订婚</font>
+						<input name="purpose" class="checkbox" type="checkbox"  value="结婚" /><font  class="click_font">结婚</font>
+						<input name="purpose" class="checkbox" type="checkbox"  value="商务" /><font  class="click_font">商务</font>
+						<input name="purpose" class="checkbox" type="checkbox"  value="宴会" /><font  class="click_font">宴会</font>
+						<input name="purpose" class="checkbox" type="checkbox"  value="纪念" /><font  class="click_font">纪念</font>
+						<input name="purpose" class="checkbox" type="checkbox"  value="日常佩戴" /><font  class="click_font">日常佩戴</font>
+						<input name="purpose" class="checkbox" type="checkbox"  value="礼物" /><font  class="click_font">礼物</font>      
+					</li>
+				</ul>
+				<ul> 
+					<li>风格</li>
+					<li>
+						
+						<input type="hidden" name="styles" value=""/>
+						
+						<input name="style" class="checkbox" type="checkbox"  value="经典" checked="checked" /><font  class="click_font">经典</font>
+						<input name="style" class="checkbox" type="checkbox"  value="欧式" /><font  class="click_font">欧式</font>
+						<input name="style" class="checkbox" type="checkbox"  value="简约" /><font  class="click_font">简约</font>
+						<input name="style" class="checkbox" type="checkbox"  value="奢华" /><font  class="click_font">奢华</font>
+						<input name="style" class="checkbox" type="checkbox"  value="大牌" /><font  class="click_font">大牌</font>
+						<input name="style" class="checkbox" type="checkbox"  value="流行时尚" /><font  class="click_font">流行时尚</font>
+						<input name="style" class="checkbox" type="checkbox"  value="前卫" /><font  class="click_font">前卫</font>  
+						<input name="style" class="checkbox" type="checkbox"  value="素金" /><font  class="click_font">素金</font> 						
+					</li>
+				</ul>
+				<div class="describe">
+					<span>描述</span><p><textarea rows="10" cols="80" id="requirement"/>设计需求</textarea></p>
+				</div>
+			</div>
+			
+		<!-- <h3><span>2</span>选择主石（请浏览：<font><a href="http://www.bavlo.com/web/gemDefault.html" target="_blank">宝珑宝石库</a></font>）</h3>
+			
+			<div class="the_main">
+				<ul>
+					<li>宝石编号</li>
+					<li><input type="text"  class="text_04" id="gemId" value="" /></li>
+					<li><input type="button" class="but_02" id="addGem" onmouseover="this.className='but_02_hover'" onmouseout="this.className='but_02'" value="添加" /></li>
+				</ul>
+				<div class="add_list" id="gemPic">
+					
+				</div>
+			</div>
+			 -->	
+			<h3><span>2</span><input id="checkGem" type="checkbox" >自备主石</h3>
+			
+			<div class="my_cont">
+				<ul>
+					<li><b>*</b>宝石类型</li>
+					<li class="sel_01">					
+						<select id="gemType">
+							<option></option>
+							
+							<option value="金色珍珠" >金色珍珠</option>
+							
+							<option value="变石" >变石</option>
+							
+							<option value="变石猫眼" >变石猫眼</option>
+							
+							<option value="铁铝榴石" >铁铝榴石</option>
+							
+							<option value="紫晶" >紫晶</option>
+							
+							<option value="红柱石" >红柱石</option>
+							
+							<option value="钙铁榴石" >钙铁榴石</option>
+							
+							<option value="磷灰石" >磷灰石</option>
+							
+							<option value="海蓝宝" >海蓝宝</option>
+							
+							<option value="绿柱石" >绿柱石</option>
+							
+							<option value="黑珍珠" >黑珍珠</option>
+							
+							<option value="猫眼" >猫眼</option>
+							
+							<option value="金绿宝石" >金绿宝石</option>
+							
+							<option value="黄晶" >黄晶</option>
+							
+							<option value="人造锆" >人造锆</option>
+							
+							<option value="赛黄晶" >赛黄晶</option>
+							
+							<option value="翠榴石" >翠榴石</option>
+							
+							<option value="钻石" >钻石</option>
+							
+							<option value="透辉石" >透辉石</option>
+							
+							<option value="祖母绿" >祖母绿</option>
+							
+							<option value="长石" >长石</option>
+							
+							<option value="火玛瑙" >火玛瑙</option>
+							
+							<option value="石榴石" >石榴石</option>
+							
+							<option value="葡萄石" >葡萄石</option>
+							
+							<option value="钙铝榴石" >钙铝榴石</option>
+							
+							<option value="堇青石" >堇青石</option>
+							
+							<option value="柱晶石" >柱晶石</option>
+							
+							<option value="锂辉石" >锂辉石</option>
+							
+							<option value="蓝晶石" >蓝晶石</option>
+							
+							<option value="柠檬晶" >柠檬晶</option>
+							
+							<option value="月光石" >月光石</option>
+							
+							<option value="摩根石" >摩根石</option>
+							
+							<option value="欧泊" >欧泊</option>
+							
+							<option value="橄榄石" >橄榄石</option>
+							
+							<option value="镁铝榴石" >镁铝榴石</option>
+							
+							<option value="粉晶" >粉晶</option>
+							
+							<option value="红宝石" >红宝石</option>
+							
+							<option value="蓝宝石" >蓝宝石</option>
+							
+							<option value="方柱石" >方柱石</option>
+							
+							<option value="锰铝榴石" >锰铝榴石</option>
+							
+							<option value="榍石" >榍石</option>
+							
+							<option value="尖晶石" >尖晶石</option>
+							
+							<option value="星光红宝石" >星光红宝石</option>
+							
+							<option value="星光蓝宝石" >星光蓝宝石</option>
+							
+							<option value="太阳石" >太阳石</option>
+							
+							<option value="坦桑石" >坦桑石</option>
+							
+							<option value="托帕石" >托帕石</option>
+							
+							<option value="碧玺" >碧玺</option>
+							
+							<option value="沙弗莱石" >沙弗莱石</option>
+							
+							<option value="白珍珠" >白珍珠</option>
+							
+							<option value="锆石" >锆石</option>
+								
+							<option value="其他" >其他</option>					
+						</select>
+						<div id="regType" style="display: none;color:red;">请选择宝石类型</div>
+					</li>					
+				</ul>
+				
+				<div class="shape">
+					<div id="regShape" style="display: none;color:red;">请选择宝石形状</div>
+					<span><b>*</b>宝石形状</span>
+					<div class="shape_block">
+						<input type="hidden" id="shape" value=""/>
+						<p>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp01.gif" class="shapeImg" over="spe01.gif" out="sp01.gif" clicked="false" alt="圆形" title="圆形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp02.gif" class="shapeImg" over="spe02.gif" out="sp02.gif" clicked="false" alt="方形" title="方形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp03.gif" class="shapeImg" over="spe03.gif" out="sp03.gif" clicked="false" alt="八角形" title="八角形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp04.gif" class="shapeImg" over="spe04.gif" out="sp04.gif" clicked="false" alt="椭圆形" title="椭圆形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp05.gif" class="shapeImg" over="spe05.gif" out="sp05.gif" clicked="false" alt="心形" title="心形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp06.gif" class="shapeImg" over="spe06.gif" out="sp06.gif" clicked="false" alt="垫形" title="垫形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp07.gif" class="shapeImg" over="spe07.gif" out="sp07.gif" clicked="false" alt="长方形" title="长方形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp08.gif" class="shapeImg" over="spe08.gif" out="sp08.gif" clicked="false" alt="梨形" title="梨形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp09.gif" class="shapeImg" over="spe09.gif" out="sp09.gif" clicked="false" alt="马眼形" title="马眼形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp10.gif" class="shapeImg" over="spe10.gif" out="sp10.gif" clicked="false" alt="三角形" title="三角形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp11.gif" class="shapeImg" over="spe11.gif" out="sp11.gif" clicked="false" alt="圆形2" title="圆形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp12.gif" class="shapeImg" over="spe12.gif" out="sp12.gif" clicked="false" alt="球形" title="球形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp13.gif" class="shapeImg" over="spe13.gif" out="sp13.gif" clicked="false" alt="椭圆形2" title="椭圆形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp14.gif" class="shapeImg" over="spe14.gif" out="sp14.gif" clicked="false" alt="梨形2" title="梨形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp15.gif" class="shapeImg" over="spe15.gif" out="sp15.gif" clicked="false" alt="马眼形2" title="马眼形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp16.gif" class="shapeImg" over="spe16.gif" out="sp16.gif" clicked="false" alt="心形2" title="心形"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp17.gif" class="shapeImg" over="spe17.gif" out="sp17.gif" clicked="false" alt="长方形2" title="长方形2"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp18.gif" class="shapeImg" over="spe18.gif" out="sp18.gif" clicked="false" alt="正方形2" title="正方形2"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp19.gif" class="shapeImg" over="spe19.gif" out="sp19.gif" clicked="false" alt="三角形2" title="三角形2"/>
+							</strong>
+							<strong>
+							<img src="http://cj.bavlo.com/web/images/cus/sp20.gif" class="shapeImg" over="spe20.gif" out="sp20.gif" clicked="false" alt="其他" title="其他"/>
+							</strong>
+						</p>
+					</div>
+				</div>
+				
+				<ul>
+					<li class="sel_03">颜色描述</li>
+					<li><input type="text"  class="text_05" id="color" value="" /></li>
+					<li class="sel_03">等级描述</li>
+					<li><input type="text"  class="text_05" id="grading" value="" /></li>
+					<li class="sel_03">长宽高</li>
+					<li style="*margin-right:6px;"><input type="text"  class="text_05" id="gemSize" value="" /> mm</li>
+					<li class="sel_03">重量</li>
+					<li style="margin-right:0px;"><input type="text"  class="text_05" id="weight" value="" /> ct</li>
+				</ul>
+				
+				<ul>
+					<li class="sel_03">证书编号</li>
+					<li><input type="text"  class="text_06" id="lab" value="" /></li>
+					<li class="sel_03"><b>*</b>数量</li>
+					<li style="width:142px"><input type="text"  class="text_05" id="amount" value="" /></li>
+					<li class="sel_03"><b>*</b>声明价值</li>
+					<li><input type="text"  class="text_05" id="declaredValue" value="" /></li>
+				</ul>
+				<p class="adds">请将宝石和证书寄送至：北京市海淀区清河嘉园东区甲1号1036室 宝珑珠宝设计（北京）有限公司 设计部 收      定制咨询：400-001-0630</p>
+			</div>
+			
+			<h3><span>3</span>选择金属</h3>
+			<div class="metal">
+				<div id="regMetal" style="display: none;color:red;">请选择金属</div>
+				<div class="sel_metal" id="sel_metal">
+					
+					<p>
+						<strong><img src="http://cj.bavlo.com/web/images/cus/pt11.gif" class="metalImg" over="pt1.gif" out="pt11.gif" click="false" orderId="1" alt="铂金"/></strong>
+						<strong><img src="http://cj.bavlo.com/web/images/cus/pt22.gif" class="metalImg" over="pt2.gif" out="pt22.gif" click="false" orderId="2" alt="18K黄金"/></strong>
+						<strong><img src="http://cj.bavlo.com/web/images/cus/pt33.gif" class="metalImg" over="pt3.gif" out="pt33.gif" click="false" orderId="3" alt="18K白金"/></strong>
+						<strong><img src="http://cj.bavlo.com/web/images/cus/pt44.gif" class="metalImg" over="pt4.gif" out="pt44.gif" click="false" orderId="4" alt="18K红金"/></strong>
+						<strong><img src="http://cj.bavlo.com/web/images/cus/pt55.gif" class="metalImg" over="pt5.gif" out="pt55.gif" click="false" orderId="5" alt="925银"/></strong>
+						<strong><img src="http://cj.bavlo.com/web/images/cus/pt66.gif" class="metalImg" over="pt6.gif" out="pt66.gif" click="false" orderId="6" alt="千足金"/></strong>
+					</p>
+				
+				</div>
+				<ul>
+					<li>刻字</li>
+					<li><input type="text" id="engrave"  class="" value="" /></li>
+					<li>字体</li>
+					<li>
+						<select class="sel_plu_a" id="diyFont">
+										<option value="华文细黑" >华文细黑</option>
+										<option value="华文仿宋" >华文仿宋</option>
+										<option value="华文楷体" >华文楷体</option>
+										<option value="华文宋体" >华文宋体</option>
+										<option value="华文中宋" >华文中宋</option>
+										<option value="仿宋" >仿宋</option>
+										<option value="黑体" >黑体</option>
+										<option value="楷体" >楷体</option>
+										<option value="Bradley Hand ITC" >Bradley Hand ITC</option>
+										<option value="Segoe Script" >Segoe Script</option>
+										<option value="Verdana" >Verdana</option>
+					 	</select>
+					</li>
+			  	</ul>
+			</div>
+			
+			<h3><span>4</span>佩戴人信息</h3>
+			<div class="my_cont">
+				<ul>
+					<li class="sel_04">性别</li>
+					<li><select id="gender">
+							<option value=""></option>
+							<option value="男" >男</option>
+							<option value="女" >女</option>
+						</select></li>
+					<li class="sel_04">生日</li>
+					<li><input type="text"  class="text_07" id="birthday" value="" readonly="readonly" onClick="WdatePicker()"/></li>
+					<li class="sel_04">年龄</li>
+					<li><input type="text"  class="text_07" id="Age" value="" /></li>
+					<li class="sel_04">职业</li>
+					<li><input type="text"  class="text_07" id="Occupation" value="" /></li>
+					<li class="sel_04">爱好</li>
+					<li><input type="text"  class="text_07" id="Hobby" value="" /></li>
+				</ul>
+				<ul>
+					<li class="sel_04">信仰</li>
+					<li><input type="text"  class="text_07" id="Belief" value="" /></li>
+					<li class="sel_04">性格</li>
+					<li><input type="text"  class="text_07" id="Character" value="" /></li>
+					<li class="sel_04">体型</li>
+					<li><input type="text"  class="text_07" id="Body_type" value="" /></li>
+					
+				</ul>
+			</div>
+			<h3><span>5</span>联系人信息</h3>
+			<div class="my_cont">
+				<ul>
+					<li class="sel_03"><b>*</b>姓名</li>
+					<li><input type="text"  class="text_05" id="Name" value="" /></li>
+					<li class="sel_03"><b>*</b>手机</li>
+					<li><input type="text"  class="text_05" id="mobile" value="" /></li>
+					<li class="sel_03">邮箱</li>
+					<li><input type="text"  class="text_05" id="email" value="" /></li>
+					<li class="sel_03">QQ</li>
+					<li><input type="text"  class="text_05" id="qq" value="" /></li>
+				</ul>
+				<ul>
+					<li class="sel_03">地址</li>
+					<li><input type="text"  class="text_06" id="address" value="" /></li>
+					<li class="sel_03">邮编</li>
+					<li><input type="text"  class="text_05" id="post_code" value="" /></li>
+				</ul>
+			</div>
+			<h3><span>6</span>上传图片</h3>
+			<div class="my_cont">
+				<form action="loadSchemeImage" method="post" id="formImg" >
+				<ul>
+						<li><input type="hidden" value="" id="id"/><input type="text"  id="fileText" class="text_cont" value="上传参考款式或宝石图片 (最多6张)" /></li>
+						<li><input type="file"  name="myfile" id="fileUpLoad" class="file_btn" onmouseover="$('#addFile').attr('class','but_01_hover')" onmouseout="$('#addFile').attr('class','but_01')"/></li>
+						<li><input type="button"  id="addFile" class="but_01" onmouseover="this.className='but_01_hover'" onmouseout="this.className='but_01'" value="选择图片" /></li>
+						<li><input type="submit"  class="but_02" onmouseover="this.className='but_02_hover'" onmouseout="this.className='but_02'"value="上传图片" /></li>
+				</ul>
+				
+				</form>
+				<div class="description"><textarea rows="10" cols="80" id="description"/>图片说明</textarea></div>
+			</div>
+
+			<div class="prompt">
+				<font>1 保存方案需要先登录或注册　　2 提交方案后请通知客服，否则该方案不会被处理      </font><span>
+				<div id="customerBottom">
+				
+			[<a href="javascript:void(0)" onclick="showLab('login')">登录|注册</a>]
+				
+				</div>
+				</span><p><a href="javascript:void(0)" onclick="reginput()">保存</a><a href="">新建</a></p>
+			</div>			
+		</div>
+    </div>
+
+</div>  <!--  //  center  -->
+    <div class="login">
+    	<div class="login_t" id="login_t">
+		<div class="w_442 left">
+			<h3><span>会员登录</span></h3>
+			<div class="side">
+				<form action="../web/toCustomizedlogin" id="costomerLoginForm" method="post">
+				<ul class="word">
+					<li><label>E-mail：</label><input class="validate[custom[email]] inp_text" type="text" name="username" id="Lusername" /></li>
+					<li><label>密码：</label><input class="validate[required] inp_text" type="password" name="password" id="Lpassword"/><span id="msg1" style="color: red;float:right;"></span></li>
+					<li><label>&nbsp;</label><span>
+					<input class="inp_che" id="remember" type="checkbox" value=""/>记住密码</span><input class="inp_sub" id="loginBtn" onclick="_hmt.push(['_trackEvent', 'login', 'click', 'toLogin'])" type="submit" value="登录" /></li>
+				</ul>
+				</form>
+				<p class="forget">忘记密码？</p>
+				<p>请在下面输入您的Email地址，然后点击“发送”按钮，我们立即把新密码发送到您的邮箱！</p>
+				<form action="../web/forgetPwd" id="forgetPwdForm" method="post">
+				<ul class="word redo">
+					<li class="mail"><label>E-mail：</label><input class="validate[custom[email]] inp_text" name="email" id="email" type="text" /></li>
+					<li><span id="error" style="color: red;margin-left: 20px;"></span><input class="inp_sub" type="submit" value="发送" /></li>
+				</ul>
+				</form>
+			</div>
+		</div>
+		<div class="w_442 new right">
+			<h3><span>新用户注册</span></h3>
+			<div class="pass">
+				<form action="../web/registerCustomized" id="coustomerRegForm" method="post">
+				<ul class="word">
+					<li><label>E-mail：</label><input class="validate[custom[email]] inp_text" type="text" name="username" id="Rusername" /></li>
+					<li><label>密码：</label><input class="validate[checkPassword] inp_text" type="password" name="password" id="Rpassword" /></li>
+					<li><label>确认密码：</label><input class="validate[required,equals[Rpassword]] inp_text" type="password" id="ReRpassword" />
+					<span id="msg2" style="color: red;float:right;"></span>
+					</li>
+					<li><label>验证码：</label><input class="validate[required] inp_text1" type="text" name="inputValidateCode" id="imageValidate" />
+					<img id="validateImage" src="http://www.bavlo.com/web/imgValidate"  alt="请输入此验证码" onclick="refush($('#validateImage'))" />
+					<a href="javaScript:refush($('#validateImage'))">换一张</a>
+					</li>
+					<span id="msg3" style="color: red;float:left;margin-left:112px;margin-top:5px;font-size:14px;"></span>
+				</ul>
+				<p class="forget least">密码由6-16个字符组成</p>
+				<ul class="word redo">
+					<li class="once"><input class="inp_sub  register" id="createCustomer" onclick="_hmt.push(['_trackEvent', 'reg', 'click', 'toReg'])" type="submit" value="立即注册" /></li>
+				</ul>
+				</form>
+			</div>
+		</div>
+		</div>	
+	</div>
+
+<div id="footer">
+    <div class="guide">
+        <ul class="g_1">
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a1.jpg" width="175px" height="38px" alt="贵州国检"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a2.jpg" width="145px" height="38px" alt="快递无忧，全程保险保障"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a3.jpg" width="145px" height="38px" alt="30天无障碍退换货"/></li>
+            <li><img src="http://cj.bavlo.com/web/image01/footer/a4.jpg" width="108px" height="38px" alt="终身免费售后服务"/></li>
+            <li class="phone"><img src="" width="195px" height="38px" alt="订购热线"/></li>
+        </ul>
+        <ul class="g_2">
+            <li>
+                <label>新手指南</label>
+
+                <span><a href="../help/ringsize.html" target="_blank">如何确定手寸？</a></span>
+
+            </li>
+
+            <li>
+                <label>支付与配送</label>
+                <span><a href="../help/payment.html" target="_blank">支付方式</a></span>
+                <span><a href="../help/delivery.html" target="_blank">配送方式</a></span>
+            </li>
+
+            <li>
+                <label>售后服务</label>
+                <span><a href="../help/returned_goods.html" target="_blank">退换货政策</a></span>
+                <span><a href="../help/after_service.html" target="_blank">售后服务内容</a></span>
+            </li>
+
+            <li>
+                <label>质量与信誉</label>
+                <span><a href="../Education/Article_586.html" target="_blank">质量承诺</a></span>
+                <span><a href="../Education/Article_594.html" target="_blank">质量规范</a></span>
+                <span><a href="../Education/Article_590.html" target="_blank">珠易购资质与信誉</a></span>
+            </li>
+
+            <li>
+                <label>客服中心</label>
+                <span><a href="../help/shopping_guide.html" target="_blank">购物流程</a></span>
+                <span><a href="../help/faq.html" target="_blank">常见问题</a></span>
+                <span><a href="../help/contact.html" target="_blank">客服联系方式</a></span>
+            </li>
+
+            <li>
+                <label>新闻中心</label>
+
+                <span><a href="../Education/Article_234.html" target="_blank">珠宝定制须知</a></span>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="foot">
+        <p class="b_r_t">
+            <a href="../help/about_bavlo.html" target="_blank">关于珠易购</a>|
+            <a href="../help/privacy_policy.html" target="_blank">隐私条款</a>|
+            <a href="../help/copyright.html" target="_blank">版权声明</a>|
+            <a href="../help/disclaimer.html" target="_blank">免责声明</a>|
+            <a href="../help/join_us.html" target="_blank">经销招商</a>|
+            <a href="../help/friend_link.html" target="_blank">友情链接</a>|
+            <a href="../help/3d_jewelry.html" target="_blank">帮助中心</a>|
+            <a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank">黔ICP备1234567号</a>|
+            <a href="#" rel="nofollow" target="_blank">黔公网安备111111111号</a>|
+            <a href="../sitemap.xml" target="_blank">网站地图</a>
+        </p>
+        <p>Copyright © 2017-2019 ZHUYIGOU Jewelry DesignStudio All Right Reserved.</p>
+    </div>
+</div>
+<div id="toolbar_container">
+   <div class="kefu">
+	   <div class="kefu1">
+		   <div class="back"></div>
+	   </div>
+   </div>
+</div>
+
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery-1.6.min.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery_cookie.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.validationEngine-zh_CN.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.validationEngine.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/jquery.form.js"></script>
+<script language="javascript" type="text/javascript" src="http://cj.bavlo.com/web/js/My97DatePicker/WdatePicker.js"></script>
+<script language="javascript" type="text/javascript" src="/mobile_sample/static/src/js/kefu.js?version=7"></script>
+<script language="javascript" type="text/javascript" src="http://www.bavlo.com/web/js/customized.js?version=1"></script>
+<script language="JavaScript">
+ var lefts=(document.body.offsetWidth-885) / 2;
+ $("#login_t").css('margin-left',lefts); 
+</script>
+</body>
+</html>
