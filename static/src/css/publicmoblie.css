@@ -17,7 +17,7 @@ input, select, textarea{
   margin: 0;
 }
 
-.hide_idxtips{font-family: Arial,"鍗庢枃缁嗛粦","寰蒋闆呴粦";background:#333;color:#fff;font-size:20px;text-align:left;overflow:hidden;width:640px;margin:0 auto;display:none;}
+.hide_idxtips{font-family: Arial,"鍗庢枃缁嗛粦","寰蒋闆呴粦";background:#333;color:#fff;font-size:20px;text-align:left;overflow:hidden;width:320px;margin:0 auto;display:none;}
 .hide_idxtips .hide_idxtips_cnt{display:-webkit-box;display:box;overflow:hidden;}
 .hide_idxtips .hide_idxtips_txt{-webkit-box-flex:1;overflow:hidden;}
 .hide_idxtips .hide_idxtips_txt a{display:inline-block;line-height:62px;white-space: nowrap;}
@@ -117,7 +117,7 @@ cursor:pointer;content:"";background-size:18px 16px;vertical-align:middle;}
 }
 .mt_18{margin-top:1.8rem;}
 .layout{
-  max-width:640px;
+  max-width:320px;
   height: auto;
  /*  overflow: hidden; */
   margin: 0 auto;
@@ -138,7 +138,7 @@ cursor:pointer;content:"";background-size:18px 16px;vertical-align:middle;}
 /*2016-05-06 add search*/
 .u_idx_search{background:url(/images/ww3/moblie/publicmoblie/u_idx_search.jpg) center no-repeat;background-size:36px 36px; width: 80px;height:90px;display:inline-block;
              position: absolute;right:8px;top: 0;cursor:pointer;}
-.f_hide_seacher{background:#fff;position:absolute;z-index:110;top:91px;left:0;width:640px;padding:18px 0 0;}
+.f_hide_seacher{background:#fff;position:absolute;z-index:110;top:91px;left:0;width:320px;padding:18px 0 0;}
 .s_line_wht{border-top: 1px solid #fff;height: 0;display:block;width: 100%;margin:18px 0  0;clear:both;}
 .f_ipt_seacher{background:#fff;width:590px;margin:0 auto 18px;position:relative;z-index:0;}
 .f_ipt_seacher input{width:465px;background:#f6f6f6;border-radius:3px 0 0 3px;border:none;margin-top:0;padding:15px 18px 16px;font-size:22px;color:#333;
@@ -159,7 +159,7 @@ cursor:pointer;content:"";background-size:18px 16px;vertical-align:middle;}
 .f_txt_seacher dd{font-size:18px;color:#999;}
 
 /* 鍏宠仈鏌ヨ */
-.f_hide_seacher .search_suggest{ padding-top: 24px; width:640px; background:#fff;color:#333;position:absolute;top: 93px;left:0;z-index: 0;display: none;}
+.f_hide_seacher .search_suggest{ padding-top: 24px; width:320px; background:#fff;color:#333;position:absolute;top: 93px;left:0;z-index: 0;display: none;}
 .f_hide_seacher .search_suggest li{ cursor:pointer;padding:0 25px 0 43px; overflow:hidden;line-height:56px;font-size:22px;}
 .f_hide_seacher .search_suggest li:hover{background:#f0f0f0;}
 .f_hide_seacher .search_suggest li i{color:#999;float:right;font-style: normal;font-size:20px;}

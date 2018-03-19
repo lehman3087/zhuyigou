@@ -172,6 +172,115 @@ class SampleController(http.Controller):
             "allpage":allpage,
         })
 
+
+
+    @http.route('/api/product/detail/<int:pid>', type='http', auth="none")
+    def productsSearchdetail(self, pid=1, **kwargs):
+
+        product = request.env['product.product'].browse(pid)
+
+        detail_images=[]
+        for image in product.images_variant:
+            detail_images.append('/web/image/product.image/'+str(image.id)+'/image')
+
+        pdic = {
+            "name":product.name,
+                "id":product.id,
+                "detail_images":detail_images,
+                "detail":product.description,
+            "description_sale":product.description_sale
+        }
+
+
+        return json.dumps(pdic)
+
+
+    @http.route('/api/products', type='json', auth="none")
+    def productsSearch(self, nowpage=1, pagecount=24, attriFilter=None, weight=None, lst_price=None, orderTypePc="asc",
+                      orderTypeWt="asc",brand_id=1,categ_id=9, **kwargs):
+
+        # print request.params
+
+        ysvalus = request.env['product.attribute.value'].search([("attribute_id", '=', 2)])
+        ysvalusarray=[]
+        for ys in ysvalus:
+            ys_dic = {
+                "name":ys.name
+            }
+            ysvalusarray.append(ys_dic)
+
+        jdvalus = request.env['product.attribute.value'].search([("attribute_id", '=', 3)])
+        jdvalusarray = []
+        for jd in jdvalus:
+            jd_dic = {
+                "name": jd.name
+            }
+            jdvalusarray.append(jd_dic)
+
+        qgvalus = request.env['product.attribute.value'].search([("attribute_id", '=', 6)])
+        dcvalus = request.env['product.attribute.value'].search([("attribute_id", '=', 7)])
+        pgvalus = request.env['product.attribute.value'].search([("attribute_id", '=', 8)])
+        ygvalus = request.env['product.attribute.value'].search([("attribute_id", '=', 9)])
+        zsvalus = request.env['product.attribute.value'].search([("attribute_id", '=', 10)])
+        ggvalus = request.env['product.attribute.value'].search([("attribute_id", '=', 13)])
+        xzvalus = request.env['product.attribute.value'].search([("attribute_id", '=', 1)])
+
+        product_brands = request.env['product.brand'].search([])
+
+        filter_domains = [("product_brand_id", '=', brand_id),("categ_id", '=', categ_id)]
+
+        if attriFilter and (attriFilter != ''):
+            attriFilterint = attriFilter.split(",")
+            filter_domains += [('attribute_value_ids', 'child_of', attriFilterint)]
+
+        if weight:
+            weight = weight.split(",")
+            filter_domains += [('weight', '>', float(weight[0])), ('weight', '<', float(weight[1]))]
+
+        if lst_price:
+            lst_price = lst_price.split(",")
+            filter_domains += [('lst_price', '>', float(lst_price[0])), ('lst_price', '<', float(lst_price[1]))]
+
+        products = request.env['product.product'].search(filter_domains, limit=int(pagecount),
+                                                         offset=(int(nowpage) - 1) * pagecount,
+                                                         order="weight " + orderTypePc + ", lst_price " + orderTypeWt)
+        allzuanshis = request.env['product.product'].search_count(filter_domains)
+
+        allpage = math.ceil(allzuanshis / int(pagecount)) or 0
+
+        reproducts=[]
+        brands = []
+        for brand in  product_brands:
+            brand_dic = {
+                "name":brand.name,
+                "id":brand.id
+            }
+            brands.append(brand_dic)
+
+
+        for product in products:
+
+            productdic = {
+                "name":product.name,
+                "id":product.id,
+                "displayImageUrl":'/web/image/product.product/'+str(product.id)+'/image',
+                "lst_price":product.lst_price,
+                "price":product.price
+
+            }
+            reproducts.append(productdic)
+
+        res ={
+            "products": reproducts,
+            "brands": brands,
+            "yss":ysvalusarray,
+            "jds": jdvalusarray
+
+        }
+        return json.dumps(res)
+
+        #return env.get_template("diamondSearch.html").render()
+
     @http.route('/custom1', type='http', auth="none")
     def custom1(self, **kwargs):
         # session = request.session
@@ -180,6 +289,17 @@ class SampleController(http.Controller):
         # return werkzeug.utils.redirect(MODULE_BASE_PATH + 'contacts/')
 
         return env.get_template("m1.html").render({
+
+        })
+
+    @http.route('/cm2', type='http', auth="none")
+    def customc1(self, **kwargs):
+        # session = request.session
+        # if not session.uid:
+        #     return login_redirect(MODULE_BASE_PATH)
+        # return werkzeug.utils.redirect(MODULE_BASE_PATH + 'contacts/')
+
+        return env.get_template("mc1.html").render({
 
         })
 
